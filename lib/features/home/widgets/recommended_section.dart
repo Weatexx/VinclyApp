@@ -90,7 +90,7 @@ class _RecommendedCard extends StatelessWidget {
     
     return GestureDetector(
       onTap: () {
-        // Navigate to quiz for this category
+        
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('$category — coming soon!'),
@@ -119,7 +119,7 @@ class _RecommendedCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Category label + emoji
+            
             Row(
               children: [
                 Text(emoji, style: const TextStyle(fontSize: 22)),
@@ -139,7 +139,7 @@ class _RecommendedCard extends StatelessWidget {
             ),
             const SizedBox(height: 12),
 
-            // Question text
+            
             Expanded(
               child: Text(
                 question,
@@ -156,7 +156,7 @@ class _RecommendedCard extends StatelessWidget {
 
             const SizedBox(height: 14),
 
-            // Answer button
+            
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
               decoration: BoxDecoration(

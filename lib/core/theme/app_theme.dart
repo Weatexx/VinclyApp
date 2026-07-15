@@ -52,26 +52,26 @@ class AppColors extends ThemeExtension<AppColors> {
 }
 
 class AppTheme {
-  // Option A: Light Romantic Palette
+  
   static const lightColors = AppColors(
     primaryPink: Color(0xFFFF7B89),
     secondaryPeach: Color(0xFFFFB5C2),
     bgWhite: Color(
       0xFFFDFBF7,
-    ), // Softer, less blinding cream color per user request
+    ), 
     cardWhite: Color(0xFFFFFFFF),
     textDark: Color(0xFF2D2D2D),
     textLight: Color(0xFF8E8E93),
   );
 
-  // Option B: Dark Romantic Palette
+  
   static const darkColors = AppColors(
-    primaryPink: Color(0xFFE55B7E), // Darker, rich rose pink
-    secondaryPeach: Color(0xFFFFB5C2), // Same soft blush
-    bgWhite: Color(0xFF1E1C22), // Dark cozy bordeaux-gray
-    cardWhite: Color(0xFF2C2A30), // Slightly lighter card
-    textDark: Color(0xFFF7F7F7), // Off-white text
-    textLight: Color(0xFFA1A0A5), // Soft gray
+    primaryPink: Color(0xFFE55B7E), 
+    secondaryPeach: Color(0xFFFFB5C2), 
+    bgWhite: Color(0xFF1E1C22), 
+    cardWhite: Color(0xFF2C2A30), 
+    textDark: Color(0xFFF7F7F7), 
+    textLight: Color(0xFFA1A0A5), 
   );
 
   static ThemeData get lightTheme {

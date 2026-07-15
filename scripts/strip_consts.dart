@@ -13,7 +13,7 @@ void main() {
     final file = File(path);
     if (file.existsSync()) {
       String content = file.readAsStringSync();
-      // Only remove layout consts that can cause cascading "invalid constant value"
+      
       content = content.replaceAll('const Padding(', 'Padding(');
       content = content.replaceAll('const Column(', 'Column(');
       content = content.replaceAll('const Row(', 'Row(');

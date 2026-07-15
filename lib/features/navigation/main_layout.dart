@@ -17,16 +17,16 @@ class _MainLayoutState extends State<MainLayout> {
 
   @override
   Widget build(BuildContext context) {
-    // Get current locale to force rebuild when locale changes
+    
     final currentLocale = context.locale;
     
-    // Use .tr() for proper localization that updates when context.setLocale() is called
+    
     final homeLabel = 'navigation.home'.tr();
     final quizzesLabel = 'navigation.quizzes'.tr();
     final profileLabel = 'navigation.profile'.tr();
     
-    // Use direct widget rendering instead of IndexedStack
-    // This ensures proper rebuild when locale changes
+    
+    
     final Widget currentScreen = switch (_currentIndex) {
       0 => const HomeScreen(),
       1 => const QuizzesScreen(),
@@ -35,7 +35,7 @@ class _MainLayoutState extends State<MainLayout> {
     };
 
     return Scaffold(
-      // Key with ValueKey(currentLocale) forces rebuild when locale changes
+      
       key: ValueKey(currentLocale.languageCode),
       body: currentScreen,
       bottomNavigationBar: BottomNavigationBar(

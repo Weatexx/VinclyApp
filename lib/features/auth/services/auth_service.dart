@@ -10,7 +10,7 @@ class AuthService {
 
   String? get currentUserUid => _auth.currentUser?.uid;
 
-  // Sign Up
+  
   Future<UserCredential?> signUpWithEmail(
     String email,
     String password,
@@ -27,7 +27,7 @@ class AuthService {
             ),
           );
 
-      // Create a document in Firestore
+      
       if (userCredential.user != null) {
         String code = _generateVinclyCode();
         try {
@@ -50,20 +50,20 @@ class AuthService {
                 ),
               );
         } catch (e) {
-          // Rollback: Delete the user from Auth so it doesn't become orphaned and cause weird routing
+          
           await userCredential.user!.delete().catchError((_) {});
           throw Exception('Profil oluşturulamadı: $e');
         }
       }
       return userCredential;
     } catch (e) {
-      // Basic print for demo. Real app should use structured error handling
+      
       print("Sign Up Error: $e");
       rethrow;
     }
   }
 
-  // Log In
+  
   Future<UserCredential?> logInWithEmail(String email, String password) async {
     try {
       return await _auth
@@ -79,12 +79,12 @@ class AuthService {
     }
   }
 
-  // Sign Out
+  
   Future<void> signOut() async {
     await _auth.signOut();
   }
 
-  // Send Email Verification
+  
   Future<void> sendEmailVerification() async {
     await _auth.currentUser?.sendEmailVerification().timeout(
       const Duration(seconds: 10),
@@ -93,7 +93,7 @@ class AuthService {
     );
   }
 
-  // Reload current user to update emailVerified state
+  
   Future<void> reloadUser() async {
     await _auth.currentUser?.reload().timeout(
       const Duration(seconds: 10),
@@ -102,11 +102,11 @@ class AuthService {
     );
   }
 
-  // Link Partner Output
+  
   Future<bool> linkPartner(String code) async {
     String myUid = _auth.currentUser!.uid;
 
-    // Find partner with that code
+    
     var query = await _firestore
         .collection('users')
         .where('vincly_code', isEqualTo: code)
@@ -119,18 +119,18 @@ class AuthService {
         );
 
     if (query.docs.isEmpty) {
-      return false; // Code not found
+      return false; 
     }
 
     String partnerUid = query.docs.first.id;
     if (partnerUid == myUid) {
-      return false; // Can't link with yourself
+      return false; 
     }
 
-    // Update both documents
+    
     WriteBatch batch = _firestore.batch();
 
-    // Server timestamp for tracking relationship length
+    
     final linkedAt = FieldValue.serverTimestamp();
 
     batch.update(_firestore.collection('users').doc(myUid), {
@@ -150,7 +150,7 @@ class AuthService {
     return true;
   }
 
-  // Generate 6-char Alphanumeric Code
+  
   String _generateVinclyCode() {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     final random = Random();
@@ -162,7 +162,7 @@ class AuthService {
     );
   }
 
-  // Stream user document for realtime updates
+  
   Stream<DocumentSnapshot> getUserStream() {
     if (_auth.currentUser == null) return const Stream.empty();
     return _firestore
@@ -171,13 +171,13 @@ class AuthService {
         .snapshots();
   }
 
-  // Stream partner document
+  
   Stream<DocumentSnapshot> getPartnerStream(String partnerId) {
     if (partnerId.isEmpty) return const Stream.empty();
     return _firestore.collection('users').doc(partnerId).snapshots();
   }
 
-  // Update current user's mood
+  
   Future<void> updateMood(String emoji) async {
     if (_auth.currentUser == null) return;
     await _firestore
@@ -190,7 +190,7 @@ class AuthService {
         );
   }
 
-  // Update daily vibe score (1-10)
+  
   Future<void> updateVibe(double vibe) async {
     if (_auth.currentUser == null) return;
     await _firestore
@@ -199,7 +199,7 @@ class AuthService {
         .update({'vibe': vibe});
   }
 
-  // Update user location for distance calculation
+  
   Future<void> updateLocation(double lat, double lon) async {
     if (_auth.currentUser == null) return;
     await _firestore
@@ -208,7 +208,7 @@ class AuthService {
         .update({'lat': lat, 'lon': lon});
   }
 
-  // Complete Profile Setup
+  
   Future<void> completeProfileSetup({
     required String displayName,
     required String language,
@@ -217,17 +217,17 @@ class AuthService {
   }) async {
     String? finalPicUrl;
 
-    // Determine which pic to save
+    
     if (assetAvatarPath != null) {
       finalPicUrl =
-          assetAvatarPath; // just store 'assets/avatars/avatar_fox.png'
+          assetAvatarPath; 
     } else if (galleryImageBytes != null) {
-      // Compress and upload via Firebase Storage
+      
       final ref = FirebaseStorage.instance.ref().child(
         'users/${_auth.currentUser!.uid}/profile.jpg',
       );
 
-      // Add explicit content type for Safari/Web
+      
       final metadata = SettableMetadata(contentType: 'image/jpeg');
 
       var uploadTask = await ref
@@ -241,7 +241,7 @@ class AuthService {
       finalPicUrl = await uploadTask.ref.getDownloadURL();
     }
 
-    // Save all to user document
+    
     await _firestore
         .collection('users')
         .doc(_auth.currentUser!.uid)
@@ -281,7 +281,7 @@ class AuthService {
     });
   }
 
-  // Unlink Partner
+  
   Future<void> unlinkPartner() async {
     final user = _auth.currentUser;
     if (user == null) return;
@@ -304,18 +304,18 @@ class AuthService {
     await batch.commit();
   }
 
-  // Delete Account completely
+  
   Future<void> deleteAccount() async {
     final user = _auth.currentUser;
     if (user == null) return;
 
-    // First, safely unlink partner to prevent them from being glued to a ghost account
+    
     await unlinkPartner();
 
-    // Delete Firestore document
+    
     await _firestore.collection('users').doc(user.uid).delete();
 
-    // Delete Auth Authentication Record
+    
     await user.delete();
   }
 }

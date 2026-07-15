@@ -40,11 +40,11 @@ void main() {
         content = content.replaceAll('const Icon', 'Icon');
         content = content.replaceAll('const BoxDecoration', 'BoxDecoration');
 
-        // Add import
+        
         if (!content.contains('context_extension.dart')) {
           final importStatement =
               "import 'package:vincly/core/theme/context_extension.dart';";
-          // Insert right after the last import
+          
           int lastImportIdx = content.lastIndexOf('import ');
           if (lastImportIdx != -1) {
             int endOfImport = content.indexOf(';', lastImportIdx);

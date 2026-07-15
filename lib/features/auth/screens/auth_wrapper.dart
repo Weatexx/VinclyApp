@@ -40,12 +40,12 @@ class AuthWrapper extends StatelessWidget {
         if (authSnapshot.hasData) {
           final user = authSnapshot.data!;
 
-          // 1. Is email verified?
+          
           if (!user.emailVerified) {
             return const EmailVerificationScreen();
           }
 
-          // 2. Email is verified, listen to Firestore for partner_id
+          
           return StreamBuilder<DocumentSnapshot>(
             stream: AuthService().getUserStream(),
             builder: (context, userSnapshot) {
@@ -82,7 +82,7 @@ class AuthWrapper extends StatelessWidget {
                           const SizedBox(height: 16),
                           ElevatedButton(
                             onPressed: () async {
-                              // Delete the orphan auth user so they can reuse the email
+                              
                               try {
                                 await FirebaseAuth.instance.currentUser
                                     ?.delete();
@@ -99,15 +99,15 @@ class AuthWrapper extends StatelessWidget {
 
                 final data = userSnapshot.data!.data() as Map<String, dynamic>;
 
-                // ─── CRITICAL: Sync Language ───────────────────────────────────────────
-                // When Firestore language field changes, apply it immediately
-                // This context is always valid (StreamBuilder context)
+                
+                
+                
                 final String cloudLang = data['language'] as String? ?? 'en';
                 
                 WidgetsBinding.instance.addPostFrameCallback((_) async {
                   final currentLocale = EasyLocalization.of(context)?.locale.languageCode ?? 'en';
                   
-                  // Only change if different from current
+                  
                   if (currentLocale != cloudLang) {
                     try {
                       final easyLoc = EasyLocalization.of(context);
@@ -143,7 +143,7 @@ class AuthWrapper extends StatelessWidget {
                 );
               }
 
-              // Loading State fallback
+              
               return Scaffold(
                 body: Center(
                   child: Column(
@@ -163,7 +163,7 @@ class AuthWrapper extends StatelessWidget {
           );
         }
 
-        // User is not authenticated
+        
         return const LoginScreen();
       },
     );

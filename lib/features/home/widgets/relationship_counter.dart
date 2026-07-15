@@ -13,7 +13,7 @@ class RelationshipCounter extends StatelessWidget {
     if (linkedAt != null) {
       final now = DateTime.now();
       final linkedDate = linkedAt!.toDate();
-      days = now.difference(linkedDate).inDays + 1; // +1 to start at Day 1
+      days = now.difference(linkedDate).inDays + 1; 
     }
 
     return Column(

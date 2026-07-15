@@ -29,7 +29,7 @@ class _DailyConversationCardState extends State<DailyConversationCard> {
   bool _hasRevealed = false;
   late ConfettiController _confettiController;
 
-  // Countdown timer
+  
   late Timer _timer;
   Duration _timeUntilMidnight = const Duration();
 
@@ -140,7 +140,7 @@ class _DailyConversationCardState extends State<DailyConversationCard> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Header with question
+                  
                   Padding(
                     padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
                     child: Column(
@@ -214,7 +214,7 @@ class _DailyConversationCardState extends State<DailyConversationCard> {
                     ),
                   ),
 
-                  // Answer state area
+                  
                   Container(
                     margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
                     padding: const EdgeInsets.all(20),

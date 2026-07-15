@@ -30,9 +30,9 @@ void main() async {
       ],
       path: 'assets/translations',
       fallbackLocale: const Locale('en'),
-      // Compare only language code (tr, en) — not region (tr_TR, en_US)
+      
       useOnlyLangCode: true,
-      // If a key is missing in the selected language, fall back to English
+      
       useFallbackTranslations: true,
       child: ChangeNotifierProvider(
         create: (_) => ThemeProvider(),
@@ -48,12 +48,12 @@ class VinclyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
-    // Rebuild when locale changes by listening to EasyLocalization's locale
+    
     final currentLocale = context.locale;
     
-    // IMPORTANT: supportedLocales must be locales that Flutter's Material library supports
-    // Easy Localization supports more languages (az, kk, tk, uz) but we keep Material locales here
-    // to avoid "No MaterialLocalizations found" error
+    
+    
+    
     const materialSupportedLocales = [
       Locale('en'),
       Locale('de'),
@@ -68,17 +68,17 @@ class VinclyApp extends StatelessWidget {
     ];
     
     return MaterialApp(
-      // Key changes to force rebuild when locale changes
+      
       key: ValueKey(currentLocale.languageCode),
       title: 'Vincly',
-      // Localization delegates with proper configuration
+      
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
         ...context.localizationDelegates,
       ],
-      // Only use locales that MaterialLocalizations supports
+      
       supportedLocales: materialSupportedLocales,
       locale: currentLocale,
       themeMode: themeProvider.themeMode,

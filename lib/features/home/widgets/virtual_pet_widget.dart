@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:vincly/core/theme/context_extension.dart';
 
-// Pet stage based on streak
+
 enum PetStage { egg, cracking, hatched }
 
 class VirtualPetWidget extends StatefulWidget {
@@ -108,7 +108,7 @@ class _VirtualPetWidgetState extends State<VirtualPetWidget>
       ),
       child: Column(
         children: [
-          // Header
+          
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -143,7 +143,7 @@ class _VirtualPetWidgetState extends State<VirtualPetWidget>
 
           const SizedBox(height: 28),
 
-          // Animated pet display
+          
           AnimatedBuilder(
             animation: Listenable.merge([
               _floatController,
@@ -159,7 +159,7 @@ class _VirtualPetWidgetState extends State<VirtualPetWidget>
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      // Glow aura
+                      
                       Container(
                         width: 160,
                         height: 160,
@@ -180,7 +180,7 @@ class _VirtualPetWidgetState extends State<VirtualPetWidget>
 
           const SizedBox(height: 24),
 
-          // Stage name
+          
           Text(
             _getStageName(context),
             style: TextStyle(
@@ -202,7 +202,7 @@ class _VirtualPetWidgetState extends State<VirtualPetWidget>
 
           const SizedBox(height: 20),
 
-          // Progress bar
+          
           ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: LinearProgressIndicator(
@@ -251,7 +251,7 @@ class _VirtualPetWidgetState extends State<VirtualPetWidget>
   }
 }
 
-/// Custom-drawn cute egg using Canvas
+
 class _AnimatedEgg extends StatelessWidget {
   final Color color;
   final PetStage stage;
@@ -278,7 +278,7 @@ class _EggPainter extends CustomPainter {
     final cx = size.width / 2;
     final cy = size.height / 2;
 
-    // Draw egg shadow
+    
     final shadowPaint =
         Paint()
           ..color = color.withValues(alpha: 0.2)
@@ -292,7 +292,7 @@ class _EggPainter extends CustomPainter {
       shadowPaint,
     );
 
-    // Gradient paint for egg body
+    
     final eggGradient = LinearGradient(
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
@@ -314,28 +314,28 @@ class _EggPainter extends CustomPainter {
           ..shader = eggGradient.createShader(eggRect)
           ..style = PaintingStyle.fill;
 
-    // Egg path
+    
     final path = Path();
-    path.moveTo(cx, cy - size.height * 0.45); // top
+    path.moveTo(cx, cy - size.height * 0.45); 
     path.cubicTo(
       cx + size.width * 0.55,
-      cy - size.height * 0.45, // top-right ctrl
+      cy - size.height * 0.45, 
       cx + size.width * 0.5,
-      cy + size.height * 0.45, // bottom-right ctrl
+      cy + size.height * 0.45, 
       cx,
-      cy + size.height * 0.45, // bottom
+      cy + size.height * 0.45, 
     );
     path.cubicTo(
       cx - size.width * 0.5,
-      cy + size.height * 0.45, // bottom-left ctrl
+      cy + size.height * 0.45, 
       cx - size.width * 0.55,
-      cy - size.height * 0.45, // top-left ctrl
+      cy - size.height * 0.45, 
       cx,
-      cy - size.height * 0.45, // back to top
+      cy - size.height * 0.45, 
     );
     canvas.drawPath(path, eggPaint);
 
-    // Egg shine
+    
     final shinePaint =
         Paint()
           ..color = Colors.white.withValues(alpha: 0.6)
@@ -349,7 +349,7 @@ class _EggPainter extends CustomPainter {
       shinePaint,
     );
 
-    // Draw cracks if cracking
+    
     if (stage == PetStage.cracking) {
       final crackPaint =
           Paint()
@@ -369,12 +369,12 @@ class _EggPainter extends CustomPainter {
       crack2.lineTo(cx + 5, cy + 8);
       canvas.drawPath(crack2, crackPaint);
 
-      // Peeking eyes dots
+      
       final eyePaint = Paint()..color = const Color(0xFF2D2D2D);
       canvas.drawCircle(Offset(cx - 8, cy - 2), 4, eyePaint);
       canvas.drawCircle(Offset(cx + 8, cy - 2), 4, eyePaint);
 
-      // Peek glow glimmer
+      
       final peekPaint =
           Paint()
             ..color = Colors.white.withValues(alpha: 0.8)
@@ -383,7 +383,7 @@ class _EggPainter extends CustomPainter {
       canvas.drawCircle(Offset(cx + 7, cy - 3), 1.5, peekPaint);
     }
 
-    // Little hearts on egg if dormant
+    
     if (stage == PetStage.egg) {
       final heartPaint =
           Paint()
@@ -422,7 +422,7 @@ class _EggPainter extends CustomPainter {
       oldDelegate.stage != stage || oldDelegate.color != color;
 }
 
-/// Custom-drawn baby dragon for hatched stage
+
 class _HatchedDragon extends StatelessWidget {
   final Color color;
 
@@ -446,7 +446,7 @@ class _DragonPainter extends CustomPainter {
     final cx = size.width / 2;
     final cy = size.height / 2;
 
-    // Shadow
+    
     final shadowPaint =
         Paint()
           ..color = color.withValues(alpha: 0.25)
@@ -469,16 +469,16 @@ class _DragonPainter extends CustomPainter {
           ).createShader(Rect.fromCenter(center: Offset(cx, cy), width: 100, height: 120))
           ..style = PaintingStyle.fill;
 
-    // Body (round blob)
+    
     canvas.drawOval(
       Rect.fromCenter(center: Offset(cx, cy + 10), width: 80, height: 90),
       bodyPaint,
     );
 
-    // Head
+    
     canvas.drawCircle(Offset(cx, cy - 30), 38, bodyPaint);
 
-    // Horns
+    
     final hornPaint = Paint()
       ..color = color.withValues(alpha: 0.9)
       ..style = PaintingStyle.fill;
@@ -495,7 +495,7 @@ class _DragonPainter extends CustomPainter {
     rightHorn.lineTo(cx + 10, cy - 62);
     canvas.drawPath(rightHorn, hornPaint);
 
-    // Eyes
+    
     final eyeWhitePaint = Paint()..color = Colors.white;
     canvas.drawCircle(Offset(cx - 12, cy - 35), 12, eyeWhitePaint);
     canvas.drawCircle(Offset(cx + 12, cy - 35), 12, eyeWhitePaint);
@@ -504,12 +504,12 @@ class _DragonPainter extends CustomPainter {
     canvas.drawCircle(Offset(cx - 10, cy - 34), 7, pupilPaint);
     canvas.drawCircle(Offset(cx + 14, cy - 34), 7, pupilPaint);
 
-    // Shine
+    
     final shinePaint = Paint()..color = Colors.white.withValues(alpha: 0.8);
     canvas.drawCircle(Offset(cx - 13, cy - 37), 3, shinePaint);
     canvas.drawCircle(Offset(cx + 11, cy - 37), 3, shinePaint);
 
-    // Cheeks (blush)
+    
     final blushPaint = Paint()
       ..color = const Color(0xFFFFB5C2).withValues(alpha: 0.6);
     canvas.drawOval(
@@ -521,7 +521,7 @@ class _DragonPainter extends CustomPainter {
       blushPaint,
     );
 
-    // Smile
+    
     final smilePaint =
         Paint()
           ..color = Colors.white.withValues(alpha: 0.9)
@@ -533,7 +533,7 @@ class _DragonPainter extends CustomPainter {
     smile.quadraticBezierTo(cx, cy - 10, cx + 10, cy - 16);
     canvas.drawPath(smile, smilePaint);
 
-    // Wings
+    
     final wingPaint =
         Paint()
           ..color = color.withValues(alpha: 0.5)
@@ -551,7 +551,7 @@ class _DragonPainter extends CustomPainter {
     rightWing.quadraticBezierTo(cx + 50, cy + 20, cx + 35, cy + 10);
     canvas.drawPath(rightWing, wingPaint);
 
-    // Heart on belly
+    
     final heartPaint = Paint()
       ..color = Colors.white.withValues(alpha: 0.4)
       ..style = PaintingStyle.fill;

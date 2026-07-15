@@ -16,7 +16,7 @@ class _QuizzesScreenState extends State<QuizzesScreen> {
   final AuthService _authService = AuthService();
   final QuizService _quizService = QuizService();
 
-  // Get localized categories
+  
   List<Map<String, dynamic>> _getCategories(BuildContext context) {
     return [
       {
@@ -77,7 +77,7 @@ class _QuizzesScreenState extends State<QuizzesScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Section header
+                
                 Text(
                   '🎯  ${'quizzes.tab_categories'.tr()}',
                   style: TextStyle(
@@ -96,7 +96,7 @@ class _QuizzesScreenState extends State<QuizzesScreen> {
                 ),
                 const SizedBox(height: 20),
 
-                // Category cards grid
+                
                 GridView.count(
                   crossAxisCount: 2,
                   shrinkWrap: true,
@@ -120,7 +120,7 @@ class _QuizzesScreenState extends State<QuizzesScreen> {
 
                 const SizedBox(height: 32),
 
-                // Past archive section
+                
                 Text(
                   '📚  ${'quizzes.tab_archive'.tr()}',
                   style: TextStyle(

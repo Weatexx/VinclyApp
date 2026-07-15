@@ -3,7 +3,7 @@ import 'package:vincly/core/theme/context_extension.dart';
 import '../../auth/services/auth_service.dart';
 
 class DailyVibeSlider extends StatefulWidget {
-  final double? currentVibe; // 1-10 from Firestore, null if not set today
+  final double? currentVibe; 
 
   const DailyVibeSlider({super.key, this.currentVibe});
 
@@ -20,16 +20,16 @@ class _DailyVibeSliderState extends State<DailyVibeSlider>
   late Animation<double> _pulse;
 
   static const List<String> _vibeEmojis = [
-    '😴', // 0-1
-    '😔', // 1-2
-    '😶', // 2-3
-    '🙂', // 3-4
-    '😊', // 4-5
-    '😄', // 5-6
-    '😁', // 6-7
-    '🤩', // 7-8
-    '😍', // 8-9
-    '🔥', // 9-10
+    '😴', 
+    '😔', 
+    '😶', 
+    '🙂', 
+    '😊', 
+    '😄', 
+    '😁', 
+    '🤩', 
+    '😍', 
+    '🔥', 
   ];
 
   static const List<String> _vibeQuestions = [
@@ -106,7 +106,7 @@ class _DailyVibeSliderState extends State<DailyVibeSlider>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header row
+          
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -118,7 +118,7 @@ class _DailyVibeSliderState extends State<DailyVibeSlider>
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              // Glowing pulsing emoji
+              
               ScaleTransition(
                 scale: _pulse,
                 child: Container(
@@ -141,7 +141,7 @@ class _DailyVibeSliderState extends State<DailyVibeSlider>
           ),
           const SizedBox(height: 12),
 
-          // Slider
+          
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
               trackHeight: 6,
@@ -164,7 +164,7 @@ class _DailyVibeSliderState extends State<DailyVibeSlider>
             ),
           ),
 
-          // Label row
+          
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -196,7 +196,7 @@ class _DailyVibeSliderState extends State<DailyVibeSlider>
   }
 }
 
-/// Custom heart-shaped slider thumb
+
 class _HeartThumbShape extends SliderComponentShape {
   final double thumbRadius;
   final Color color;
@@ -226,17 +226,17 @@ class _HeartThumbShape extends SliderComponentShape {
     final canvas = context.canvas;
     final r = thumbRadius;
 
-    // Shadow
+    
     final shadowPaint = Paint()
       ..color = color.withValues(alpha: 0.35)
       ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 8);
     canvas.drawCircle(center + const Offset(0, 2), r, shadowPaint);
 
-    // White circle background
+    
     final bgPaint = Paint()..color = Colors.white;
     canvas.drawCircle(center, r, bgPaint);
 
-    // Heart path
+    
     final heartPaint = Paint()
       ..color = color
       ..style = PaintingStyle.fill;

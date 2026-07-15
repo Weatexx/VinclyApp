@@ -4,10 +4,10 @@
 *.moved-aside
 *.pbxuser
 *.perspectivev3
-**/*sync/
-.sconsign.dblite
-.tags*
-**/.vagrant/
+**
+
+
+  .vagrant/
 **/DerivedData/
 Icon?
 **/Pods/

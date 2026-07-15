@@ -65,7 +65,7 @@ class CoupleStatsGrid extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           crossAxisSpacing: 12,
           mainAxisSpacing: 12,
-          childAspectRatio: 1.55, // wider cards → less height pressure
+          childAspectRatio: 1.55, 
           children: stats.map((s) => _StatCard(item: s)).toList(),
         ),
       ],
@@ -108,7 +108,7 @@ class _StatCard extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Icon pill
+          
           Container(
             padding: const EdgeInsets.all(9),
             decoration: BoxDecoration(
@@ -118,7 +118,7 @@ class _StatCard extends StatelessWidget {
             child: Text(item.emoji, style: const TextStyle(fontSize: 18)),
           ),
           const SizedBox(width: 10),
-          // Text column — Flexible prevents overflow
+          
           Flexible(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

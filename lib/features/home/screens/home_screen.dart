@@ -137,9 +137,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // ─────────────────────────────────────
-                        // 1. Partner Map (avatars + dashed + distance)
-                        // ─────────────────────────────────────
+                        
+                        
+                        
                         PartnerMapStatus(
                           myMood: myMood,
                           partnerMood: partnerMood,
@@ -156,39 +156,39 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         const SizedBox(height: 18),
 
-                        // ─────────────────────────────────────
-                        // 2. Daily Vibe Slider (NEW)
-                        // ─────────────────────────────────────
+                        
+                        
+                        
                         DailyVibeSlider(currentVibe: myVibe),
                         const SizedBox(height: 18),
 
-                        // ─────────────────────────────────────
-                        // 3. Daily Conversation / Quiz card
-                        // ─────────────────────────────────────
+                        
+                        
+                        
                         DailyConversationCard(
                           partnerId: partnerId,
                           partnerName: partnerName,
                         ),
                         const SizedBox(height: 18),
 
-                        // ─────────────────────────────────────
-                        // 4. Recommended For You
-                        // ─────────────────────────────────────
+                        
+                        
+                        
                         const RecommendedSection(),
                         const SizedBox(height: 18),
 
-                        // ─────────────────────────────────────
-                        // 5. Couple Stats + Pet (bottom section)
-                        // ─────────────────────────────────────
+                        
+                        
+                        
                         CoupleStatsGrid(
                           linkedAt: linkedAt,
                           streakCount: streakCount,
                         ),
                         const SizedBox(height: 18),
 
-                        // ─────────────────────────────────────
-                        // 6. Virtual Pet (just above bottom)
-                        // ─────────────────────────────────────
+                        
+                        
+                        
                         VirtualPetWidget(streak: streakCount),
                         const SizedBox(height: 8),
                       ],

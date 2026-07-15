@@ -49,7 +49,7 @@ class _SignupScreenState extends State<SignupScreen> {
     try {
       await _authService.signUpWithEmail(email, password, firstName, lastName);
       await _authService.sendEmailVerification();
-      // Clear SignupScreen from navigation stack so AuthWrapper takes over
+      
       if (mounted) {
         Navigator.popUntil(context, (route) => route.isFirst);
       }
@@ -291,7 +291,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 onPressed: () {
                   Navigator.of(
                     context,
-                  ).pop(); // Go back to AuthWrapper's initial LoginScreen
+                  ).pop(); 
                 },
                 child: Text(
                   'auth.signup.have_account'.tr(),

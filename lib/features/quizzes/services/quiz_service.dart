@@ -8,7 +8,7 @@ class QuizService {
   final AuthService _auth = AuthService();
   final RelationshipService _relService = RelationshipService();
 
-  // Question keys for localization (maps to translation keys)
+  
   final List<String> _questionKeys = [
     'quizzes.daily_questions.q1',
     'quizzes.daily_questions.q2',
@@ -20,23 +20,23 @@ class QuizService {
   ];
 
   String _getTodayDateStr() {
-    return DateTime.now().toIso8601String().split('T').first; // e.g. 2026-03-27
+    return DateTime.now().toIso8601String().split('T').first; 
   }
 
-  // Get today's question in the current language
+  
   String getTodayQuestion() {
-    // Deterministic index based on days since epoch so it changes every day
+    
     int days = DateTime.now().difference(DateTime(2025, 1, 1)).inDays;
     String questionKey = _questionKeys[days % _questionKeys.length];
     
-    // Return the translated question
+    
     return questionKey.tr();
   }
 
   String get getRelationshipId {
-    // Hack: We need partnerUid to compute relationshipId.
-    // Instead of querying partnerUid everywhere, ideally we store rel_id in the user's doc.
-    return ""; // Will be computed in the function that uses partnerUid
+    
+    
+    return ""; 
   }
 
   String computeRelId(String partnerUid) {
@@ -47,7 +47,7 @@ class QuizService {
     return "${ids[0]}_${ids[1]}";
   }
 
-  // Stream today's answer document
+  
   Stream<DocumentSnapshot> getTodayQuizStream(String partnerUid) {
     String relId = computeRelId(partnerUid);
     String date = _getTodayDateStr();
@@ -73,20 +73,20 @@ class QuizService {
     await _firestore.runTransaction((transaction) async {
       var snapshot = await transaction.get(docRef);
       if (!snapshot.exists) {
-        // Create the document
+        
         transaction.set(docRef, {
           'question': getTodayQuestion(),
           '${myUid}_answer': answer,
         });
       } else {
-        // Update the document
+        
         transaction.update(docRef, {'${myUid}_answer': answer});
 
-        // Check if partner already answered, if so, increase streak!
+        
         Map<String, dynamic> data = snapshot.data()!;
         if (data.containsKey('${partnerUid}_answer')) {
-          // Both have answered now! This is the magical moment.
-          // Let's increment streak in the parent relationship document.
+          
+          
           var relDoc = _firestore.collection('relationships').doc(relId);
           var relSnap = await transaction.get(relDoc);
           int currentStreak = relSnap.data()?['streak_count'] ?? 0;
@@ -100,7 +100,7 @@ class QuizService {
     });
   }
 
-  // Get past questions
+  
   Future<List<Map<String, dynamic>>> getPastQuizzes(String partnerUid) async {
     String relId = computeRelId(partnerUid);
     var query = await _firestore

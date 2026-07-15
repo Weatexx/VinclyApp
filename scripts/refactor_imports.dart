@@ -7,7 +7,7 @@ void main() async {
   final toRemove = [
     "import '../../../core/theme/app_theme.dart';",
     "import '../../core/theme/app_theme.dart';",
-    "import 'package:flutter/services.dart';", // for partner_link_screen
+    "import 'package:flutter/services.dart';", 
   ];
 
   await for (final entity in libDir.list(recursive: true)) {

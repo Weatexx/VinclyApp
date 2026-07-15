@@ -5,7 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:vincly/core/theme/context_extension.dart';
 
-// Conditional import: web uses dart:html reload; mobile/desktop uses EasyLocalization directly
+
 import 'package:vincly/core/utils/locale_helper_web.dart'
     if (dart.library.io) 'package:vincly/core/utils/locale_helper_stub.dart';
 
@@ -18,13 +18,13 @@ class LanguageSelectionPage extends StatefulWidget {
 
 class _LanguageSelectionPageState extends State<LanguageSelectionPage> {
   static const List<List<String>> _languages = [
-    // ── Turkic ───────────────────────────────────
+    
     ['🇹🇷', 'Türkçe', 'tr'],
     ['🇦🇿', 'Azərbaycanca', 'az'],
     ['🇹🇲', 'Türkmençe', 'tk'],
     ['🇺🇿', "O'zbekcha", 'uz'],
     ['🇰🇿', 'Қазақша', 'kk'],
-    // ── Global ───────────────────────────────────
+    
     ['🇬🇧', 'English', 'en'],
     ['🇷🇺', 'Русский', 'ru'],
     ['🇪🇸', 'Español', 'es'],
@@ -37,11 +37,11 @@ class _LanguageSelectionPageState extends State<LanguageSelectionPage> {
   bool _isLoading = false;
 
   void _selectLanguage(String code) async {
-    if (_isLoading) return; // Prevent double tap
+    if (_isLoading) return; 
     
     setState(() => _isLoading = true);
     
-    // Show loading indicator
+    
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -51,8 +51,8 @@ class _LanguageSelectionPageState extends State<LanguageSelectionPage> {
     );
 
     try {
-      // ONLY persist to Firestore - don't call setLocale()
-      // AuthWrapper will listen to this change and trigger rebuild
+      
+      
       final uid = FirebaseAuth.instance.currentUser?.uid;
       if (uid != null) {
         await FirebaseFirestore.instance
@@ -61,30 +61,30 @@ class _LanguageSelectionPageState extends State<LanguageSelectionPage> {
             .update({'language': code});
       }
 
-      // Wait for Firestore sync
+      
       await Future.delayed(const Duration(milliseconds: 500));
 
       if (!mounted) return;
 
-      // Close loading dialog
+      
       Navigator.of(context, rootNavigator: true).pop();
 
-      // Wait for dialog to close
+      
       await Future.delayed(const Duration(milliseconds: 100));
 
       if (!mounted) return;
 
       if (kIsWeb) {
-        // ── WEB ─────────────────────────────────────────────────────────────
-        // On web, also reload page for full restart
+        
+        
         Navigator.of(context).pop();
         
         await Future.delayed(const Duration(milliseconds: 200));
         applyLocaleChange(code);
       } else {
-        // ── MOBILE / DESKTOP ────────────────────────────────────────────────
-        // Just pop the language selection page
-        // AuthWrapper will handle the rebuild when Firestore changes
+        
+        
+        
         try {
           Navigator.of(context).pop();
         } catch (e) {
@@ -95,12 +95,12 @@ class _LanguageSelectionPageState extends State<LanguageSelectionPage> {
       debugPrint('Language change error: $e');
       if (!mounted) return;
 
-      // Close all dialogs
+      
       try {
         Navigator.of(context, rootNavigator: true).pop();
       } catch (_) {}
 
-      // Show error message
+      
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

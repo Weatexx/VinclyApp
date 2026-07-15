@@ -43,10 +43,10 @@ class _PartnerLinkScreenState extends State<PartnerLinkScreen>
     if (_isSuccess) return;
     setState(() => _isSuccess = true);
 
-    // Play cool animation
+    
     _animationController.forward();
 
-    // Wait for 2 seconds to admire animation before heading to home
+    
     await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
       Navigator.of(
@@ -76,7 +76,7 @@ class _PartnerLinkScreenState extends State<PartnerLinkScreen>
           () => _errorMessage = "onboarding.partner_link.error_not_found".tr(),
         );
       } else {
-        // Success! The stream builder will catch it and call _onMatched()
+        
       }
     } catch (e) {
       setState(() => _errorMessage = "common.error".tr(args: ['$e']));
@@ -179,7 +179,7 @@ class _PartnerLinkScreenState extends State<PartnerLinkScreen>
           const SizedBox(height: 16),
           TextButton.icon(
             onPressed: () {
-              // ignore: deprecated_member_use
+              
               Share.share('Connect with me on Vincly! My code is $vinclyCode');
             },
             icon: Icon(Icons.share, color: context.colors.secondaryPeach),

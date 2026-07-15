@@ -17,8 +17,8 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
   final _authService = AuthService();
 
   String _selectedLanguage = 'tr';
-  String? _selectedAssetAvatar; // e.g. 'assets/avatars/avatar_fox.png'
-  Uint8List? _selectedGalleryBytes; // If they picked from gallery
+  String? _selectedAssetAvatar; 
+  Uint8List? _selectedGalleryBytes; 
 
   bool _isLoading = false;
 
@@ -30,7 +30,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
 
   Future<void> _pickFromGallery() async {
     final ImagePicker picker = ImagePicker();
-    // Use low quality/size to save Firebase Storage costs
+    
     final XFile? image = await picker.pickImage(
       source: ImageSource.gallery,
       imageQuality: 50,
@@ -44,7 +44,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
         _selectedGalleryBytes = bytes;
         _selectedAssetAvatar = null;
       });
-      if (mounted) Navigator.pop(context); // Close bottom sheet
+      if (mounted) Navigator.pop(context); 
     }
   }
 
@@ -70,7 +70,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                 ),
               ),
               const SizedBox(height: 24),
-              // Vincly Avatars
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: _vinclyAvatars.map((path) {
@@ -93,7 +93,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               const SizedBox(height: 32),
               Divider(color: context.colors.textLight),
               const SizedBox(height: 16),
-              // Gallery Option
+              
               ListTile(
                 leading: Icon(
                   Icons.photo_library,
@@ -131,11 +131,11 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
         galleryImageBytes: _selectedGalleryBytes,
       );
 
-      // On success, AuthWrapper won't automatically redirect if it's already on the stream building
-      // Actually AuthWrapper stream triggers on 'user' doc update!
-      // So if 'setup_completed' becomes true, AuthWrapper will naturally transition to PartnerLinkScreen.
-      // But just to be safe if stream is laggy, we might not want to rely solely on it.
-      // However, AuthWrapper reacts to the `users/{uid}` document changes!
+      
+      
+      
+      
+      
     } catch (e) {
       if (mounted)
         ScaffoldMessenger.of(
@@ -173,7 +173,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               ),
               const SizedBox(height: 48),
 
-              // Avatar Circle
+              
               GestureDetector(
                 onTap: _showAvatarPicker,
                 child: CircleAvatar(
@@ -198,7 +198,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               ),
               const SizedBox(height: 32),
 
-              // Name TextField
+              
               TextField(
                 controller: _nameController,
                 textCapitalization: TextCapitalization.words,
@@ -218,7 +218,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               ),
               const SizedBox(height: 24),
 
-              // Language Segmented Button
+              
               Text(
                 'onboarding.profile_setup.language_label'.tr(),
                 style: TextStyle(color: context.colors.textLight),

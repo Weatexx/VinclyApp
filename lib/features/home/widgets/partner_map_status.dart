@@ -11,7 +11,7 @@ class PartnerMapStatus extends StatelessWidget {
   final String? partnerPhotoUrl;
   final int daysTogether;
   final int streak;
-  // Optional lat/lon for both users — nullable, shown as '?' if not available
+  
   final double? myLat;
   final double? myLon;
   final double? partnerLat;
@@ -33,12 +33,12 @@ class PartnerMapStatus extends StatelessWidget {
     this.partnerLon,
   });
 
-  /// Haversine formula — no package needed
+  
   String get _distanceLabel {
     if (myLat == null || myLon == null || partnerLat == null || partnerLon == null) {
       return '--- km';
     }
-    const R = 6371.0; // Earth radius in km
+    const R = 6371.0; 
     final lat1 = myLat! * math.pi / 180;
     final lat2 = partnerLat! * math.pi / 180;
     final dLat = (partnerLat! - myLat!) * math.pi / 180;
@@ -68,7 +68,7 @@ class PartnerMapStatus extends StatelessWidget {
       ),
       child: Column(
         children: [
-          // Stat pills row
+          
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -78,7 +78,7 @@ class PartnerMapStatus extends StatelessWidget {
           ),
           const SizedBox(height: 22),
 
-          // Avatars + dashed line + distance badge
+          
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -87,12 +87,12 @@ class PartnerMapStatus extends StatelessWidget {
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
-                    // Dashed line behind badge
+                    
                     CustomPaint(
                       painter: _DashedLinePainter(context.colors.primaryPink),
                       child: const SizedBox(height: 2),
                     ),
-                    // Distance badge on top
+                    
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                       decoration: BoxDecoration(

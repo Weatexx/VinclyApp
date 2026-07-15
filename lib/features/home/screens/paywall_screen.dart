@@ -29,7 +29,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
       return;
     }
 
-    // Mock Product IDs
+    
     const Set<String> kIds = <String>{'streak_rescue_099'};
     final ProductDetailsResponse productDetailResponse = await _inAppPurchase
         .queryProductDetails(kIds);
@@ -38,7 +38,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
       _isAvailable = true;
       _products = productDetailResponse.productDetails;
       if (_products.isEmpty) {
-        // We will insert a dummy product for UI demo since IAP requires Play Console setup
+        
         _products.add(
           ProductDetails(
             id: 'streak_rescue_099',
@@ -55,15 +55,15 @@ class _PaywallScreenState extends State<PaywallScreen> {
 
   void _buyProduct(ProductDetails productDetails) {
     setState(() => _isPurchasing = true);
-    // In a real app we would call:
-    // final PurchaseParam purchaseParam = PurchaseParam(productDetails: productDetails);
-    // _inAppPurchase.buyConsumable(purchaseParam: purchaseParam);
+    
+    
+    
 
-    // For this demonstration, we simulate a successful purchase
+    
     Future.delayed(const Duration(seconds: 2), () {
       if (mounted) {
         setState(() => _isPurchasing = false);
-        Navigator.of(context).pop(true); // Return success
+        Navigator.of(context).pop(true); 
       }
     });
   }

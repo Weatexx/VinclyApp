@@ -141,7 +141,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
               TextButton(
                 onPressed: () {
                   _authService.signOut();
-                  // AuthWrapper will catch authStateChanges and go to Login automatically.
+                  
                 },
                 child: Text(
                   'auth.email_verification.button_logout'.tr(),

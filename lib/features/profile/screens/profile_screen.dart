@@ -30,7 +30,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
     if (image != null) {
       final bytes = await image.readAsBytes();
-      if (mounted) Navigator.pop(context); // close bottom sheet
+      if (mounted) Navigator.pop(context); 
       setState(() => _isUploadingPic = true);
       try {
         await _authService.updateProfilePicture(galleryBytes: bytes);
@@ -384,7 +384,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // === CURRENT USER SECTION ===
+                
                 Center(
                   child: Column(
                     children: [
@@ -476,7 +476,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
                 const SizedBox(height: 32),
 
-                // === LINKED PARTNER SECTION ===
+                
                 Text(
                   'profile.linked_partner'.tr(),
                   style: TextStyle(
@@ -547,7 +547,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         },
                       ),
 
-                // === VINCLY PRO BANNER ===
+                
                 const SizedBox(height: 32),
                 GestureDetector(
                   onTap: () {
@@ -624,7 +624,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
                 const SizedBox(height: 48),
 
-                // === SETTINGS MENU ===
+                
                 Text(
                   'profile.settings'.tr(),
                   style: TextStyle(

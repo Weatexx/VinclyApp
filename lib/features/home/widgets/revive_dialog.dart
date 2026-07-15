@@ -53,7 +53,7 @@ class ReviveDialog extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(
                     context,
-                  ).pop(true); // Signifies intent to use free revive
+                  ).pop(true); 
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: context.colors.secondaryPeach,
@@ -73,7 +73,7 @@ class ReviveDialog extends StatelessWidget {
                           PaywallScreen(previousStreak: previousStreak),
                     ),
                   );
-                  // Pass the purchase result up
+                  
                   if (context.mounted)
                     Navigator.of(context).pop(purchased ?? false);
                 },

@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
         _emailController.text.trim(),
         _passwordController.text.trim(),
       );
-      // Clear LoginScreen from navigation stack so AuthWrapper takes over visually if pushed
+      
       if (mounted) {
         Navigator.popUntil(context, (route) => route.isFirst);
       }

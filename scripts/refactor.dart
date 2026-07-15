@@ -10,7 +10,7 @@ void main() {
         !entity.path.contains('app_theme.dart')) {
       String content = entity.readAsStringSync();
 
-      // 1. Theme Color Constants Replacements
+      
       content = content.replaceAll(
         'AppTheme.neonPurple',
         'AppTheme.primaryPink',
@@ -25,7 +25,7 @@ void main() {
       );
       content = content.replaceAll('AppTheme.darkGrey', 'AppTheme.cardWhite');
 
-      // 2. Text and Icon Color Replacements for Light Theme Flip
+      
       content = content.replaceAll(
         'color: Colors.white',
         'color: AppTheme.textDark',
@@ -41,7 +41,7 @@ void main() {
       content = content.replaceAll('Colors.grey', 'AppTheme.textLight');
       content = content.replaceAll('Colors.white', 'AppTheme.cardWhite');
 
-      // 3. Exceptions & Revert cases
+      
       content = content.replaceAll(
         'CircularProgressIndicator(color: AppTheme.cardWhite)',
         'CircularProgressIndicator(color: Colors.white)',
@@ -51,7 +51,7 @@ void main() {
         'CircularProgressIndicator(color: Colors.white',
       );
 
-      // Revert button text styles if any got changed to textDark but they need white on primaryPink
+      
       content = content.replaceAll(
         "TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: AppTheme.textDark)",
         "TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)",
