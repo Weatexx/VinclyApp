@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Hoş geldiňiz!",
+      "email": "E-poçta",
+      "password": "Parol",
+      "button": "Giriş",
+      "no_account": "Hasabyňyz ýokmy? Hasap açyň",
+      "error_invalid": "E-poçta ýa-da parol nädogry."
+    },
+    "signup": {
+      "title": "Hasap açyň",
+      "first_name": "Ady",
+      "last_name": "Familiýasy",
+      "email": "E-poçta",
+      "password": "Parol",
+      "button": "Hasap açyň",
+      "have_account": "Hasabyňyz barmy? Giriş",
+      "error_fill_all": "Ähli meýdançalary dolduruň.",
+      "error_pass_length": "Parol azyndan 6 simvol bolmaly."
+    },
+    "email_verification": {
+      "title": "E-poçtany tassyklaň",
+      "headline": "Gelen gutusyny barlaň",
+      "description": "E-poçtaňyza tassyklama salgysy iberdik. Ony basyp hasabyňyzy tassyklaň.",
+      "button_verify": "E-poçtamy tassykladym",
+      "button_resend": "Tassyklama e-poçtasyny täzeden iberiň",
+      "button_logout": "Çykyş",
+      "msg_sent": "Tassyklama e-poçtasy iberildi!",
+      "msg_checking": "Tassyklama ýagdaýy barlanýar...",
+      "msg_not_verified": "E-poçtaňyz heniz tassyklanmadyk."
+    },
+    "wrapper": {
+      "waiting_auth": "Tanamak garaşylýar...",
+      "waiting_db": "Maglumatlar bazasy okalýar...",
+      "error_not_found": "Hasap döretmekde mesele çykdy.",
+      "btn_delete_broken": "Döwük hasaby pozuň",
+      "error_fallback": "Näbelli ýükleýiş ýagdaýy..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Profilyňyzy düzüň",
+      "subtitle": "Hyzmatdaşyňyz sizi şeýle görer",
+      "choose_pic": "Profil suraty saýlaň",
+      "upload_gallery": "Galerýadan ýükläň",
+      "name_label": "Görkeziljek at",
+      "language_label": "Programma dili",
+      "btn_finish": "Düzmegi tamamlaň",
+      "error_name": "Bir at giriziň."
+    },
+    "partner_link": {
+      "title": "Hyzmatdaşy birleşdiriň",
+      "your_code": "Vincly Koduňyz",
+      "tap_to_copy": "Göçürmek üçin basyň",
+      "partner_code_label": "Hyzmatdaşyň kodyny giriziň",
+      "btn_link": "Hasaplary birleşdiriň",
+      "msg_waiting": "Hyzmatdaşyňyzyň birleşmegini garaşýarys...",
+      "msg_copied": "Kod kopyalandy!",
+      "error_invalid": "Nädogry Vincly kod formaty.",
+      "error_self": "Özüňiz bilen birleşip bilmersiňiz.",
+      "error_not_found": "Kod tapylmady!",
+      "error_already": "Bu ulanyjy eýýäm başgasy bilen birleşdirilen.",
+      "success": "Hyzmatdaş üstünlikli birleşdirildi!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Gün bilelikde" },
+    "mood_tracker": { "your_mood": "Keýpiňiz", "partner_mood": "Hyzmatdaşyň keýpi" },
+    "vibe": {
+      "question_1": "Bu gün nädip turduňyz?",
+      "question_2": "Bu gün energiýaňyz nähili?",
+      "question_3": "Häzir özüňizi nähili duýýarsyňyz?"
+    },
+    "stats": {
+      "days_together": "Bilelikde günler",
+      "questions": "Soraglar",
+      "cities": "Şäherler",
+      "memories": "Ýatlamalar",
+      "couple_stats": "Jübüt statistikasy"
+    },
+    "quizzes": {
+      "appbar_title": "Günüň Kwizi",
+      "daily_card_title": "Günüň Soragy",
+      "daily_card_subtitle": "Şu günki soragy jogaplamak üçin basyň",
+      "question_of_day": "Günüň Soragy",
+      "hint_answer": "Dürüst jogabyňyzy ýazyň...",
+      "btn_lock": "Jogaby kilitle 🔒",
+      "wait_partner": "Hyzmatdaşyň jogaby garaşylýar...",
+      "locked_desc": "Jogabyňyz kiltlendi! Ikisiňiz hem jogaplanda açylar.",
+      "your_answer": "Siziň jogabyňyz",
+      "partner_answer": "Hyzmatdaşyň jogaby",
+      "streak": "Günlük seri",
+      "past_archive": "Geçmiş soraglar arxiwi",
+      "no_past": "Heniz geçmiş kwiz ýok.",
+      "error_no_partner": "Hyzmatdaş maglumaty ýok"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Vincly Koduňyz",
+    "copied": "Kopyalandy!",
+    "linked_partner": "Birleşdirilen Hyzmatdaş",
+    "not_linked": "Heniz birleşdirilmedi",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Siz alyň, Hyzmatdaşyňyz MUFT alsyn!",
+    "settings": "Sazlamalar",
+    "app_language": "Programma dili",
+    "change_language": "Dili çalşyň",
+    "notifications": "Habar sazlamalary",
+    "theme": "Tema saýlawy",
+    "logout": "Çykyş"
+  },
+  "common": { "error": "Ýalňyşlyk: {}" }
+}

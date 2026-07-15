@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Benvenuto di nuovo!",
+      "email": "E-mail",
+      "password": "Password",
+      "button": "Accedi",
+      "no_account": "Non hai un account? Registrati",
+      "error_invalid": "E-mail o password non corretti."
+    },
+    "signup": {
+      "title": "Crea account",
+      "first_name": "Nome",
+      "last_name": "Cognome",
+      "email": "E-mail",
+      "password": "Password",
+      "button": "Registrati",
+      "have_account": "Hai già un account? Accedi",
+      "error_fill_all": "Compila tutti i campi.",
+      "error_pass_length": "La password deve avere almeno 6 caratteri."
+    },
+    "email_verification": {
+      "title": "Verifica e-mail",
+      "headline": "Controlla la tua casella",
+      "description": "Abbiamo inviato un link di verifica alla tua e-mail.",
+      "button_verify": "Ho verificato la mia e-mail",
+      "button_resend": "Rinvia e-mail di verifica",
+      "button_logout": "Esci",
+      "msg_sent": "E-mail di verifica inviata!",
+      "msg_checking": "Controllo stato...",
+      "msg_not_verified": "La tua e-mail non è ancora verificata."
+    },
+    "wrapper": {
+      "waiting_auth": "In attesa di autenticazione...",
+      "waiting_db": "Caricamento database...",
+      "error_not_found": "Problema durante la creazione del record.",
+      "btn_delete_broken": "Elimina account danneggiato",
+      "error_fallback": "Stato di caricamento sconosciuto..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Configura il profilo",
+      "subtitle": "Il tuo partner ti vedrà così",
+      "choose_pic": "Scegli foto profilo",
+      "upload_gallery": "Carica dalla galleria",
+      "name_label": "Nome visualizzato",
+      "language_label": "Lingua app",
+      "btn_finish": "Completa configurazione",
+      "error_name": "Inserisci un nome."
+    },
+    "partner_link": {
+      "title": "Collega partner",
+      "your_code": "Il tuo Codice Vincly",
+      "tap_to_copy": "Tocca per copiare",
+      "partner_code_label": "Inserisci il codice del partner",
+      "btn_link": "Collega account",
+      "msg_waiting": "In attesa che il partner si colleghi...",
+      "msg_copied": "Codice copiato!",
+      "error_invalid": "Formato codice non valido.",
+      "error_self": "Non puoi collegarti con te stesso.",
+      "error_not_found": "Codice non trovato!",
+      "error_already": "Questo utente è già collegato a qualcun altro.",
+      "success": "Partner collegato con successo!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Giorni insieme" },
+    "mood_tracker": { "your_mood": "Il tuo umore", "partner_mood": "Umore del partner" },
+    "vibe": {
+      "question_1": "Come ti sei svegliato oggi?",
+      "question_2": "Com'è la tua energia oggi?",
+      "question_3": "Come ti senti in questo momento?"
+    },
+    "stats": {
+      "days_together": "Giorni insieme",
+      "questions": "Domande",
+      "cities": "Città",
+      "memories": "Ricordi",
+      "couple_stats": "Statistiche di coppia"
+    },
+    "quizzes": {
+      "appbar_title": "Quiz del giorno",
+      "daily_card_title": "Domanda del giorno",
+      "daily_card_subtitle": "Tocca per rispondere",
+      "question_of_day": "Domanda del giorno",
+      "hint_answer": "Scrivi la tua risposta onesta...",
+      "btn_lock": "Blocca risposta 🔒",
+      "wait_partner": "In attesa della risposta del partner...",
+      "locked_desc": "Risposta bloccata! Si rivelerà quando entrambi risponderete.",
+      "your_answer": "La tua risposta",
+      "partner_answer": "Risposta del partner",
+      "streak": "Serie giornaliera",
+      "past_archive": "Archivio passato",
+      "no_past": "Nessun quiz passato ancora.",
+      "error_no_partner": "Dati partner non disponibili"
+    }
+  },
+  "profile": {
+    "title": "Profilo",
+    "vincly_code": "Il tuo Codice Vincly",
+    "copied": "Copiato!",
+    "linked_partner": "Partner collegato",
+    "not_linked": "Non ancora collegato",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Compra 1, il partner lo riceve GRATIS!",
+    "settings": "Impostazioni",
+    "app_language": "Lingua app",
+    "change_language": "Cambia lingua",
+    "notifications": "Impostazioni notifiche",
+    "theme": "Preferenze tema",
+    "logout": "Esci"
+  },
+  "common": { "error": "Errore: {}" }
+}

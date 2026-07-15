@@ -1,0 +1,240 @@
+﻿{
+  "auth": {
+    "login": {
+      "title": "Welcome back!",
+      "email": "Email",
+      "password": "Password",
+      "button": "Log In",
+      "no_account": "Don''t have an account? Sign Up",
+      "error_invalid": "Invalid email or password."
+    },
+    "signup": {
+      "title": "Create Account",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "button": "Sign Up",
+      "have_account": "Already have an account? Log In",
+      "error_fill_all": "Please fill in all fields.",
+      "error_pass_length": "Password must be at least 6 characters."
+    },
+    "email_verification": {
+      "title": "Verify Email",
+      "headline": "Check Your Inbox",
+      "description": "We have sent a verification link to your email. Please click the link to verify your account before logging in with your partner.",
+      "button_verify": "I''ve Verified My Email",
+      "button_resend": "Resend Verification Email",
+      "button_logout": "Log Out",
+      "msg_sent": "Verification email sent!",
+      "msg_checking": "Checking verification status...",
+      "msg_not_verified": "Your email is not verified yet. Please check again."
+    },
+    "wrapper": {
+      "waiting_auth": "Waiting for authentication...",
+      "waiting_db": "Reading Firestore Database...\n(If it hangs here, your rules are not in Test Mode!)",
+      "error_not_found": "There was a problem creating the record (Record Not Found).",
+      "btn_delete_broken": "Delete Broken Account and Sign Up Again",
+      "error_fallback": "Unknown Loading State (Fallback)..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Setup Your Profile",
+      "subtitle": "Your partner will see this",
+      "choose_pic": "Choose Profile Picture",
+      "upload_gallery": "Upload from Gallery",
+      "name_label": "Display Name",
+      "language_label": "App Language",
+      "btn_finish": "Finish Setup",
+      "error_name": "Please enter a display name."
+    },
+    "partner_link": {
+      "title": "Link Partner",
+      "your_code": "Your Vincly Code",
+      "tap_to_copy": "Tap to copy",
+      "partner_code_label": "Enter Partner''s Code",
+      "btn_link": "Link Accounts",
+      "msg_waiting": "Waiting for your partner to link...",
+      "msg_copied": "Code copied to clipboard!",
+      "error_invalid": "Invalid Vincly Code format.",
+      "error_self": "You cannot link with yourself.",
+      "error_not_found": "Code not found! Make sure your partner has signed up.",
+      "error_already": "This user is already linked with someone else.",
+      "success": "Partner successfully linked! Getting things ready..."
+    }
+  },
+  "home": {
+    "appbar_title": "Vincly",
+    "relationship_counter": {
+      "days_together": "Days Together"
+    },
+    "mood_tracker": {
+      "your_mood": "Your Mood",
+      "partner_mood": "Partner''s Mood"
+    },
+    "mood_tired": "Tired",
+    "mood_so_so": "So-so",
+    "mood_good": "Good",
+    "mood_great": "Great",
+    "mood_amazing": "Amazing",
+    "vibe": {
+      "question_1": "How did you wake up today?",
+      "question_2": "What''s your energy like today?",
+      "question_3": "How are you feeling right now?",
+      "title": "Daily Vibe",
+      "submit": "Submit Vibe"
+    },
+    "stats": {
+      "days_together": "Days Together",
+      "questions": "Questions",
+      "cities": "Cities",
+      "memories": "Memories",
+      "couple_stats": "Couple Stats"
+    },
+    "pet_section": {
+      "title": "Love Dragon 🐉",
+      "dormant_egg": "Dormant Egg",
+      "baby_dragon": "Baby Love Dragon 🐉",
+      "stage_1": "Stage 1",
+      "stage_2": "Stage 2",
+      "stage_3": "Stage 3",
+      "waiting_partner": "Waiting for your partner...",
+      "your_vincly_pet": "Your Vincly Pet",
+      "pet_stage_egg_desc": "Answer daily questions together to hatch your pet!",
+      "pet_stage_cracking_desc": "Keep up the streak! Almost there...",
+      "pet_stage_hatched_desc": "Your love hatched a little dragon! Keep nurturing it."
+    },
+    "daily_question": {
+      "title": "Daily Question",
+      "appbar_title": "Daily Quizzes",
+      "daily_card_title": "Daily Check-in Quiz",
+      "daily_card_subtitle": "Tap to answer today''s question",
+      "question_of_day": "Question of the Day",
+      "hint_answer": "Write your honest answer...",
+      "btn_lock": "Lock Answer 🔒",
+      "btn_reveal": "Reveal Answer 👀",
+      "wait_partner": "Waiting for your partner...",
+      "locked_desc": "Your answer is locked! Reveal happens when they answer.",
+      "your_answer": "Your Answer",
+      "partner_answer": "Partner''s Answer",
+      "streak": "Day Streak",
+      "past_archive": "Past Questions Archive",
+      "no_past": "No past quizzes yet.",
+      "error_no_partner": "Partner data missing",
+      "daily_question_header": "DAILY QUESTION",
+      "your_answer_label": "Your answer...",
+      "answer_button": "ANSWER  ▶",
+      "waiting_message": "Waiting for {{partner_name}} to answer...",
+      "both_answered": "✨ Both answered! ✨",
+      "you_label": "You"
+    },
+    "recommended": {
+      "title": "Recommended",
+      "recommended_for_you": "Recommended for you",
+      "question_1": "Two Truths and a Lie",
+      "question_2": "Would You Rather",
+      "question_3": "Never Have I Ever",
+      "question_4": "20 Questions",
+      "question_5": "Relationship Trivia",
+      "question_6": "Fantasy Date",
+      "question_7": "Childhood Memories",
+      "question_8": "Future Dreams",
+      "conversation_starters": "Conversation Starters",
+      "deep_dive": "Deep Dive",
+      "this_or_that": "This or That",
+      "q1": "What''s something I did recently that made you feel loved?",
+      "q2": "If we had 48h and no responsibilities, where would we go?",
+      "q3": "Coffee date or hiking adventure?",
+      "q4": "What''s a dream you haven''t told me about yet?"
+    },
+    "partner_map": {
+      "title": "Where''s Your Partner?",
+      "distance": "Distance",
+      "last_seen": "Last seen",
+      "never_seen": "Never shared location"
+    }
+  },
+  "quizzes": {
+    "appbar_title": "Quizzes",
+    "tab_categories": "🎯 Quiz Categories",
+    "tab_archive": "📚 Past Archive",
+    "category_1": "First Steps",
+    "category_1_desc": "Getting to know each other",
+    "category_2": "Spicy Chaos",
+    "category_2_desc": "Playful and fun questions",
+    "category_3": "Turkish Style",
+    "category_3_desc": "Traditional relationship questions",
+    "category_4": "Memory Lane",
+    "category_4_desc": "Questions about your journey together",
+    "btn_start": "Start Quiz",
+    "no_quizzes": "No quizzes available",
+    "loading": "Loading quizzes...",
+    "error": "Error loading quizzes",
+    "quiz_categories_subtitle": "Choose a theme and dive deep together.",
+    "archive_subtitle": "All the questions you''ve answered together.",
+    "streak_format": "{{count}} day{{plural}}",
+    "daily_questions": {
+      "q1": "What is something I did recently that made you feel truly loved?",
+      "q2": "If we teleported anywhere right now for a 24-hour date, where to?",
+      "q3": "What''s one thing you are looking forward to doing with me?",
+      "q4": "What''s a small stressful thing in your life I could help with right now?",
+      "q5": "What''s your favorite memory of our first month together?",
+      "q6": "If you had to describe my personality as a color, what would it be?",
+      "q7": "What is a habit of mine that you secretly find adorable?"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "vincly_code": "Vincly Code",
+    "copied": "Copied to clipboard!",
+    "linked_partner": "Linked Partner",
+    "not_linked": "Not linked yet",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Buy 1, Partner gets it FREE!",
+    "settings": "Settings",
+    "app_language": "App Language",
+    "change_language": "Change Language",
+    "notifications": "Notification Settings",
+    "theme": "Theme Preferences",
+    "logout": "Log Out",
+    "theme_system": "System Default",
+    "theme_light": "Light Theme (Light & Fresh)",
+    "theme_dark": "Dark Theme (Night & Romantic)",
+    "unlink_partner": "Unlink Partner",
+    "delete_account": "Delete Account",
+    "unlink_confirm_title": "Unlink Partner?",
+    "unlink_confirm_desc": "This will remove your partner connection. Your data will remain.",
+    "delete_confirm_title": "Delete Account?",
+    "delete_confirm_desc": "This action cannot be undone. All your data will be permanently deleted.",
+    "btn_cancel": "Cancel",
+    "btn_confirm": "Confirm"
+  },
+  "paywall": {
+    "save_streak_title": "Save Your Streak!",
+    "oh_no": "Oh no! 😢",
+    "streak_broken": "Your streak has been broken!",
+    "revive_desc": "Use a free revive to restore your streak",
+    "free_revives": "Free Revives",
+    "buy_revives": "Buy Revives",
+    "revive_1": "1 Revive",
+    "revive_5": "5 Revives (+Bonus)",
+    "revive_10": "10 Revives (+Bigger Bonus)",
+    "btn_revive": "Use Free Revive",
+    "btn_buy": "Buy Now",
+    "btn_close": "Close"
+  },
+  "navigation": {
+    "home": "Home",
+    "quizzes": "Quizzes",
+    "profile": "Profile"
+  },
+  "common": {
+    "error": "Error: {}",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "ok": "OK",
+    "close": "Close"
+  }
+}

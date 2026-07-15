@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Witaj ponownie!",
+      "email": "E-mail",
+      "password": "Hasło",
+      "button": "Zaloguj się",
+      "no_account": "Nie masz konta? Zarejestruj się",
+      "error_invalid": "Nieprawidłowy e-mail lub hasło."
+    },
+    "signup": {
+      "title": "Utwórz konto",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "email": "E-mail",
+      "password": "Hasło",
+      "button": "Zarejestruj się",
+      "have_account": "Masz już konto? Zaloguj się",
+      "error_fill_all": "Wypełnij wszystkie pola.",
+      "error_pass_length": "Hasło musi mieć co najmniej 6 znaków."
+    },
+    "email_verification": {
+      "title": "Zweryfikuj e-mail",
+      "headline": "Sprawdź swoją skrzynkę",
+      "description": "Wysłaliśmy link weryfikacyjny na Twój e-mail.",
+      "button_verify": "Zweryfikowałem e-mail",
+      "button_resend": "Wyślij ponownie",
+      "button_logout": "Wyloguj się",
+      "msg_sent": "E-mail weryfikacyjny wysłany!",
+      "msg_checking": "Sprawdzanie stanu...",
+      "msg_not_verified": "Twój e-mail nie został jeszcze zweryfikowany."
+    },
+    "wrapper": {
+      "waiting_auth": "Oczekiwanie na uwierzytelnienie...",
+      "waiting_db": "Ładowanie bazy danych...",
+      "error_not_found": "Wystąpił problem podczas tworzenia rekordu.",
+      "btn_delete_broken": "Usuń uszkodzone konto",
+      "error_fallback": "Nieznany stan ładowania..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Skonfiguruj profil",
+      "subtitle": "Twój partner zobaczy Cię w ten sposób",
+      "choose_pic": "Wybierz zdjęcie profilowe",
+      "upload_gallery": "Prześlij z galerii",
+      "name_label": "Wyświetlana nazwa",
+      "language_label": "Język aplikacji",
+      "btn_finish": "Zakończ konfigurację",
+      "error_name": "Podaj nazwę."
+    },
+    "partner_link": {
+      "title": "Połącz partnera",
+      "your_code": "Twój Kod Vincly",
+      "tap_to_copy": "Dotknij, aby skopiować",
+      "partner_code_label": "Wprowadź kod partnera",
+      "btn_link": "Połącz konta",
+      "msg_waiting": "Oczekiwanie na połączenie partnera...",
+      "msg_copied": "Kod skopiowany!",
+      "error_invalid": "Nieprawidłowy format kodu Vincly.",
+      "error_self": "Nie możesz połączyć się ze sobą.",
+      "error_not_found": "Kod nie znaleziony!",
+      "error_already": "Ten użytkownik jest już połączony z inną osobą.",
+      "success": "Partner pomyślnie połączony!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Dni razem" },
+    "mood_tracker": { "your_mood": "Twój nastrój", "partner_mood": "Nastrój partnera" },
+    "vibe": {
+      "question_1": "Jak się obudziłeś dzisiaj?",
+      "question_2": "Jaki masz dziś poziom energii?",
+      "question_3": "Jak się teraz czujesz?"
+    },
+    "stats": {
+      "days_together": "Dni razem",
+      "questions": "Pytania",
+      "cities": "Miasta",
+      "memories": "Wspomnienia",
+      "couple_stats": "Statystyki pary"
+    },
+    "quizzes": {
+      "appbar_title": "Quiz dnia",
+      "daily_card_title": "Pytanie dnia",
+      "daily_card_subtitle": "Dotknij, aby odpowiedzieć na dzisiejsze pytanie",
+      "question_of_day": "Pytanie dnia",
+      "hint_answer": "Napisz swoją szczerą odpowiedź...",
+      "btn_lock": "Zablokuj odpowiedź 🔒",
+      "wait_partner": "Oczekiwanie na odpowiedź partnera...",
+      "locked_desc": "Odpowiedź zablokowana! Zostanie ujawniona gdy oboje odpowiedzą.",
+      "your_answer": "Twoja odpowiedź",
+      "partner_answer": "Odpowiedź partnera",
+      "streak": "Seria dzienna",
+      "past_archive": "Archiwum pytań",
+      "no_past": "Brak poprzednich quizów.",
+      "error_no_partner": "Brak danych partnera"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Twój Kod Vincly",
+    "copied": "Skopiowano!",
+    "linked_partner": "Połączony partner",
+    "not_linked": "Nie połączono jeszcze",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Kup 1, partner otrzyma GRATIS!",
+    "settings": "Ustawienia",
+    "app_language": "Język aplikacji",
+    "change_language": "Zmień język",
+    "notifications": "Ustawienia powiadomień",
+    "theme": "Preferencje motywu",
+    "logout": "Wyloguj się"
+  },
+  "common": { "error": "Błąd: {}" }
+}

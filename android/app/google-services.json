@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "180675252341",
+    "project_id": "vinclyapp",
+    "storage_bucket": "vinclyapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180675252341:android:ee399e56a7e5972131e83c",
+        "android_client_info": {
+          "package_name": "com.example.vincly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_i8gJTxoGU29_8NoPsmoOVZ7L6Fr3O9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

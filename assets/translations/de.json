@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Willkommen zurück!",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "button": "Anmelden",
+      "no_account": "Kein Konto? Registrieren",
+      "error_invalid": "E-Mail oder Passwort falsch."
+    },
+    "signup": {
+      "title": "Konto erstellen",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "button": "Registrieren",
+      "have_account": "Bereits ein Konto? Anmelden",
+      "error_fill_all": "Bitte alle Felder ausfüllen.",
+      "error_pass_length": "Das Passwort muss mindestens 6 Zeichen haben."
+    },
+    "email_verification": {
+      "title": "E-Mail verifizieren",
+      "headline": "Posteingang prüfen",
+      "description": "Wir haben einen Bestätigungslink an Ihre E-Mail gesendet.",
+      "button_verify": "Ich habe meine E-Mail verifiziert",
+      "button_resend": "Bestätigungs-E-Mail erneut senden",
+      "button_logout": "Abmelden",
+      "msg_sent": "Bestätigungs-E-Mail gesendet!",
+      "msg_checking": "Verifizierungsstatus wird geprüft...",
+      "msg_not_verified": "Ihre E-Mail wurde noch nicht verifiziert."
+    },
+    "wrapper": {
+      "waiting_auth": "Authentifizierung wird erwartet...",
+      "waiting_db": "Datenbank wird geladen...",
+      "error_not_found": "Beim Erstellen des Datensatzes ist ein Problem aufgetreten.",
+      "btn_delete_broken": "Kaputtes Konto löschen",
+      "error_fallback": "Unbekannter Ladezustand..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Profil einrichten",
+      "subtitle": "So sieht der Partner dich",
+      "choose_pic": "Profilbild wählen",
+      "upload_gallery": "Aus Galerie hochladen",
+      "name_label": "Anzeigename",
+      "language_label": "App-Sprache",
+      "btn_finish": "Einrichtung abschließen",
+      "error_name": "Bitte einen Namen eingeben."
+    },
+    "partner_link": {
+      "title": "Partner verknüpfen",
+      "your_code": "Dein Vincly-Code",
+      "tap_to_copy": "Zum Kopieren tippen",
+      "partner_code_label": "Code des Partners eingeben",
+      "btn_link": "Konten verknüpfen",
+      "msg_waiting": "Warte auf Partnerverknüpfung...",
+      "msg_copied": "Code in Zwischenablage kopiert!",
+      "error_invalid": "Ungültiges Vincly-Code-Format.",
+      "error_self": "Du kannst dich nicht mit dir selbst verknüpfen.",
+      "error_not_found": "Code nicht gefunden!",
+      "error_already": "Dieser Benutzer ist bereits mit jemand anderem verknüpft.",
+      "success": "Partner erfolgreich verknüpft!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Tage zusammen" },
+    "mood_tracker": { "your_mood": "Deine Stimmung", "partner_mood": "Stimmung des Partners" },
+    "vibe": {
+      "question_1": "Wie bist du heute aufgewacht?",
+      "question_2": "Wie ist deine Energie heute?",
+      "question_3": "Wie fühlst du dich gerade?"
+    },
+    "stats": {
+      "days_together": "Tage zusammen",
+      "questions": "Fragen",
+      "cities": "Städte",
+      "memories": "Erinnerungen",
+      "couple_stats": "Paar-Statistiken"
+    },
+    "quizzes": {
+      "appbar_title": "Quiz des Tages",
+      "daily_card_title": "Frage des Tages",
+      "daily_card_subtitle": "Tippe, um die heutige Frage zu beantworten",
+      "question_of_day": "Frage des Tages",
+      "hint_answer": "Schreibe deine ehrliche Antwort...",
+      "btn_lock": "Antwort sperren 🔒",
+      "wait_partner": "Warte auf Partnerantwort...",
+      "locked_desc": "Deine Antwort ist gesperrt! Sie wird enthüllt, wenn beide antworten.",
+      "your_answer": "Deine Antwort",
+      "partner_answer": "Antwort des Partners",
+      "streak": "Tages-Streak",
+      "past_archive": "Archiv vergangener Fragen",
+      "no_past": "Noch keine vergangenen Quizze.",
+      "error_no_partner": "Keine Partnerdaten vorhanden"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Dein Vincly-Code",
+    "copied": "In Zwischenablage kopiert!",
+    "linked_partner": "Verknüpfter Partner",
+    "not_linked": "Noch nicht verknüpft",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Kaufe 1, Partner bekommt es GRATIS!",
+    "settings": "Einstellungen",
+    "app_language": "App-Sprache",
+    "change_language": "Sprache ändern",
+    "notifications": "Benachrichtigungseinstellungen",
+    "theme": "Design-Einstellungen",
+    "logout": "Abmelden"
+  },
+  "common": { "error": "Fehler: {}" }
+}

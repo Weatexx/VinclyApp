@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Bon retour !",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "button": "Se connecter",
+      "no_account": "Pas de compte ? S'inscrire",
+      "error_invalid": "E-mail ou mot de passe incorrect."
+    },
+    "signup": {
+      "title": "Créer un compte",
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "button": "S'inscrire",
+      "have_account": "Vous avez déjà un compte ? Se connecter",
+      "error_fill_all": "Veuillez remplir tous les champs.",
+      "error_pass_length": "Le mot de passe doit contenir au moins 6 caractères."
+    },
+    "email_verification": {
+      "title": "Vérifier l'e-mail",
+      "headline": "Vérifiez votre boîte de réception",
+      "description": "Nous avons envoyé un lien de vérification à votre e-mail.",
+      "button_verify": "J'ai vérifié mon e-mail",
+      "button_resend": "Renvoyer l'e-mail de vérification",
+      "button_logout": "Déconnexion",
+      "msg_sent": "E-mail de vérification envoyé !",
+      "msg_checking": "Vérification du statut...",
+      "msg_not_verified": "Votre e-mail n'est pas encore vérifié."
+    },
+    "wrapper": {
+      "waiting_auth": "En attente d'authentification...",
+      "waiting_db": "Chargement de la base de données...",
+      "error_not_found": "Un problème est survenu lors de la création du compte.",
+      "btn_delete_broken": "Supprimer le compte endommagé",
+      "error_fallback": "État de chargement inconnu..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Configurer le profil",
+      "subtitle": "Votre partenaire vous verra ainsi",
+      "choose_pic": "Choisir une photo de profil",
+      "upload_gallery": "Télécharger depuis la galerie",
+      "name_label": "Nom affiché",
+      "language_label": "Langue de l'application",
+      "btn_finish": "Terminer la configuration",
+      "error_name": "Veuillez entrer un nom."
+    },
+    "partner_link": {
+      "title": "Lier le partenaire",
+      "your_code": "Votre Code Vincly",
+      "tap_to_copy": "Appuyez pour copier",
+      "partner_code_label": "Entrez le code de votre partenaire",
+      "btn_link": "Lier les comptes",
+      "msg_waiting": "En attente de la liaison du partenaire...",
+      "msg_copied": "Code copié !",
+      "error_invalid": "Format de code Vincly invalide.",
+      "error_self": "Vous ne pouvez pas vous lier à vous-même.",
+      "error_not_found": "Code non trouvé !",
+      "error_already": "Cet utilisateur est déjà lié à quelqu'un d'autre.",
+      "success": "Partenaire lié avec succès !"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Jours ensemble" },
+    "mood_tracker": { "your_mood": "Votre humeur", "partner_mood": "Humeur du partenaire" },
+    "vibe": {
+      "question_1": "Comment vous êtes-vous réveillé aujourd'hui ?",
+      "question_2": "Comment est votre énergie aujourd'hui ?",
+      "question_3": "Comment vous sentez-vous maintenant ?"
+    },
+    "stats": {
+      "days_together": "Jours ensemble",
+      "questions": "Questions",
+      "cities": "Villes",
+      "memories": "Souvenirs",
+      "couple_stats": "Statistiques du couple"
+    },
+    "quizzes": {
+      "appbar_title": "Quiz du jour",
+      "daily_card_title": "Question du jour",
+      "daily_card_subtitle": "Appuyez pour répondre à la question d'aujourd'hui",
+      "question_of_day": "Question du jour",
+      "hint_answer": "Écrivez votre réponse honnête...",
+      "btn_lock": "Verrouiller la réponse 🔒",
+      "wait_partner": "En attente de la réponse du partenaire...",
+      "locked_desc": "Votre réponse est verrouillée ! Elle sera révélée quand les deux répondront.",
+      "your_answer": "Votre réponse",
+      "partner_answer": "Réponse du partenaire",
+      "streak": "Série quotidienne",
+      "past_archive": "Archives des questions passées",
+      "no_past": "Pas encore de quiz passés.",
+      "error_no_partner": "Données du partenaire manquantes"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Votre Code Vincly",
+    "copied": "Copié dans le presse-papiers !",
+    "linked_partner": "Partenaire lié",
+    "not_linked": "Pas encore lié",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Achetez 1, le partenaire l'obtient GRATUITEMENT !",
+    "settings": "Paramètres",
+    "app_language": "Langue de l'application",
+    "change_language": "Changer de langue",
+    "notifications": "Paramètres de notification",
+    "theme": "Préférences de thème",
+    "logout": "Déconnexion"
+  },
+  "common": { "error": "Erreur : {}" }
+}

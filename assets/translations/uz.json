@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Xush kelibsiz!",
+      "email": "Elektron pochta",
+      "password": "Parol",
+      "button": "Kirish",
+      "no_account": "Hisobingiz yo'qmi? Ro'yxatdan o'ting",
+      "error_invalid": "Elektron pochta yoki parol noto'g'ri."
+    },
+    "signup": {
+      "title": "Hisob yarating",
+      "first_name": "Ism",
+      "last_name": "Familiya",
+      "email": "Elektron pochta",
+      "password": "Parol",
+      "button": "Ro'yxatdan o'tish",
+      "have_account": "Hisobingiz bormi? Kiring",
+      "error_fill_all": "Iltimos, barcha maydonlarni to'ldiring.",
+      "error_pass_length": "Parol kamida 6 ta belgidan iborat bo'lishi kerak."
+    },
+    "email_verification": {
+      "title": "Elektron pochtani tasdiqlang",
+      "headline": "Kiruvchi xabarlarni tekshiring",
+      "description": "Elektron pochtangizga tasdiqlash havolasini yubordik.",
+      "button_verify": "Elektron pochtamni tasdiqladim",
+      "button_resend": "Tasdiqlash xatini qayta yuboring",
+      "button_logout": "Chiqish",
+      "msg_sent": "Tasdiqlash xati yuborildi!",
+      "msg_checking": "Tasdiqlash holati tekshirilmoqda...",
+      "msg_not_verified": "Elektron pochtangiz hali tasdiqlanmagan."
+    },
+    "wrapper": {
+      "waiting_auth": "Autentifikatsiya kutilmoqda...",
+      "waiting_db": "Ma'lumotlar bazasi o'qilmoqda...",
+      "error_not_found": "Hisob yaratishda muammo yuz berdi.",
+      "btn_delete_broken": "Buzilgan hisobni o'chiring",
+      "error_fallback": "Noma'lum yuklash holati..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Profilingizni sozlang",
+      "subtitle": "Sherigingiz sizni shunday ko'radi",
+      "choose_pic": "Profil rasmini tanlang",
+      "upload_gallery": "Galereyadan yuklang",
+      "name_label": "Ko'rsatiladigan ism",
+      "language_label": "Ilova tili",
+      "btn_finish": "Sozlashni yakunlang",
+      "error_name": "Iltimos, ism kiriting."
+    },
+    "partner_link": {
+      "title": "Sherigi ulang",
+      "your_code": "Sizning Vincly Kodingiz",
+      "tap_to_copy": "Nusxalash uchun bosing",
+      "partner_code_label": "Sheriging kodini kiriting",
+      "btn_link": "Hisoblarni ulang",
+      "msg_waiting": "Sherigingizning ulanishini kutmoqda...",
+      "msg_copied": "Kod nusxalandi!",
+      "error_invalid": "Noto'g'ri Vincly kodi formati.",
+      "error_self": "O'zingiz bilan ulana olmaysiz.",
+      "error_not_found": "Kod topilmadi!",
+      "error_already": "Bu foydalanuvchi allaqachon boshqasi bilan ulangan.",
+      "success": "Sherigi muvaffaqiyatli ulandi!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Kun birga" },
+    "mood_tracker": { "your_mood": "Kayfiyatingiz", "partner_mood": "Sheriging kayfiyati" },
+    "vibe": {
+      "question_1": "Bugun qanday uyg'ondingiz?",
+      "question_2": "Bugun energiyangiz qanday?",
+      "question_3": "Hozir o'zingizni qanday his qilmoqdasiz?"
+    },
+    "stats": {
+      "days_together": "Birga kunlar",
+      "questions": "Savollar",
+      "cities": "Shaharlar",
+      "memories": "Xotiralar",
+      "couple_stats": "Juft statistikasi"
+    },
+    "quizzes": {
+      "appbar_title": "Kunning Kvizi",
+      "daily_card_title": "Kunning Savoli",
+      "daily_card_subtitle": "Bugungi savolga javob berish uchun bosing",
+      "question_of_day": "Kunning Savoli",
+      "hint_answer": "Halol javobingizni yozing...",
+      "btn_lock": "Javobni qulflang 🔒",
+      "wait_partner": "Sheriging javobi kutilmoqda...",
+      "locked_desc": "Javobingiz qulflandi! Ikkovingiz ham javob berganda ochiladi.",
+      "your_answer": "Sizning javobingiz",
+      "partner_answer": "Sheriging javobi",
+      "streak": "Kunlik seriya",
+      "past_archive": "O'tgan savollar arxivi",
+      "no_past": "Hali o'tgan kviz yo'q.",
+      "error_no_partner": "Sherigi ma'lumotlari yo'q"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Sizning Vincly Kodingiz",
+    "copied": "Buferga nusxalandi!",
+    "linked_partner": "Ulangan Sherigi",
+    "not_linked": "Hali ulanmagan",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Siz oling, Sherigingiz BEPUL olsin!",
+    "settings": "Sozlamalar",
+    "app_language": "Ilova tili",
+    "change_language": "Tilni o'zgartirish",
+    "notifications": "Bildirishnoma sozlamalari",
+    "theme": "Mavzu sozlamalari",
+    "logout": "Chiqish"
+  },
+  "common": { "error": "Xato: {}" }
+}

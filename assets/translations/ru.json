@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "С возвращением!",
+      "email": "Эл. почта",
+      "password": "Пароль",
+      "button": "Войти",
+      "no_account": "Нет аккаунта? Зарегистрируйтесь",
+      "error_invalid": "Неверный адрес или пароль."
+    },
+    "signup": {
+      "title": "Создать аккаунт",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "email": "Эл. почта",
+      "password": "Пароль",
+      "button": "Зарегистрироваться",
+      "have_account": "Уже есть аккаунт? Войти",
+      "error_fill_all": "Пожалуйста, заполните все поля.",
+      "error_pass_length": "Пароль должен содержать не менее 6 символов."
+    },
+    "email_verification": {
+      "title": "Подтвердите эл. почту",
+      "headline": "Проверьте входящие",
+      "description": "Мы отправили ссылку для подтверждения на вашу эл. почту.",
+      "button_verify": "Я подтвердил эл. почту",
+      "button_resend": "Отправить письмо повторно",
+      "button_logout": "Выйти",
+      "msg_sent": "Письмо подтверждения отправлено!",
+      "msg_checking": "Проверка статуса...",
+      "msg_not_verified": "Эл. почта ещё не подтверждена."
+    },
+    "wrapper": {
+      "waiting_auth": "Ожидание авторизации...",
+      "waiting_db": "Загрузка базы данных...",
+      "error_not_found": "Ошибка при создании аккаунта.",
+      "btn_delete_broken": "Удалить сломанный аккаунт",
+      "error_fallback": "Неизвестное состояние загрузки..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Настройте профиль",
+      "subtitle": "Именно так вас увидит партнёр",
+      "choose_pic": "Выбрать фото профиля",
+      "upload_gallery": "Загрузить из галереи",
+      "name_label": "Отображаемое имя",
+      "language_label": "Язык приложения",
+      "btn_finish": "Завершить настройку",
+      "error_name": "Введите имя."
+    },
+    "partner_link": {
+      "title": "Связать партнёра",
+      "your_code": "Ваш Vincly Код",
+      "tap_to_copy": "Нажмите для копирования",
+      "partner_code_label": "Введите код партнёра",
+      "btn_link": "Связать аккаунты",
+      "msg_waiting": "Ожидание подключения партнёра...",
+      "msg_copied": "Код скопирован в буфер!",
+      "error_invalid": "Неверный формат кода Vincly.",
+      "error_self": "Нельзя связаться с самим собой.",
+      "error_not_found": "Код не найден!",
+      "error_already": "Этот пользователь уже связан с другим.",
+      "success": "Партнёр успешно добавлен!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Дней вместе" },
+    "mood_tracker": { "your_mood": "Ваше настроение", "partner_mood": "Настроение партнёра" },
+    "vibe": {
+      "question_1": "Как вы проснулись сегодня?",
+      "question_2": "Какой у вас энергетический заряд?",
+      "question_3": "Как вы себя чувствуете прямо сейчас?"
+    },
+    "stats": {
+      "days_together": "Дней вместе",
+      "questions": "Вопросы",
+      "cities": "Города",
+      "memories": "Воспоминания",
+      "couple_stats": "Статистика пары"
+    },
+    "quizzes": {
+      "appbar_title": "Вопрос дня",
+      "daily_card_title": "Вопрос дня",
+      "daily_card_subtitle": "Нажмите, чтобы ответить",
+      "question_of_day": "Вопрос дня",
+      "hint_answer": "Напишите честный ответ...",
+      "btn_lock": "Заблокировать ответ 🔒",
+      "wait_partner": "Ожидание ответа партнёра...",
+      "locked_desc": "Ответ заблокирован! Откроется когда оба ответят.",
+      "your_answer": "Ваш ответ",
+      "partner_answer": "Ответ партнёра",
+      "streak": "Серия дней",
+      "past_archive": "Архив вопросов",
+      "no_past": "Нет прошлых квизов.",
+      "error_no_partner": "Нет данных о партнёре"
+    }
+  },
+  "profile": {
+    "title": "Профиль",
+    "vincly_code": "Ваш Vincly Код",
+    "copied": "Скопировано!",
+    "linked_partner": "Связанный партнёр",
+    "not_linked": "Ещё не связан",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Купите — партнёр получит БЕСПЛАТНО!",
+    "settings": "Настройки",
+    "app_language": "Язык приложения",
+    "change_language": "Сменить язык",
+    "notifications": "Настройки уведомлений",
+    "theme": "Настройки темы",
+    "logout": "Выйти"
+  },
+  "common": { "error": "Ошибка: {}" }
+}

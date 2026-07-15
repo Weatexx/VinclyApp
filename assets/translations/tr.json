@@ -1,0 +1,221 @@
+{
+  "auth": {
+    "login": {
+      "title": "Tekrar Hoş Geldin!",
+      "email": "E-posta",
+      "password": "Şifre",
+      "button": "Giriş Yap",
+      "no_account": "Hesabın yok mu? Kayıt Ol",
+      "error_invalid": "E-posta veya şifre hatalı."
+    },
+    "signup": {
+      "title": "Hesap Oluştur",
+      "first_name": "Adın",
+      "last_name": "Soyadın",
+      "email": "E-posta",
+      "password": "Şifre",
+      "button": "Kayıt Ol",
+      "have_account": "Zaten hesabın var mı? Giriş Yap",
+      "error_fill_all": "Lütfen tüm alanları doldur.",
+      "error_pass_length": "Şifren en az 6 karakter olmalı."
+    },
+    "email_verification": {
+      "title": "E-postanı Doğrula",
+      "headline": "Gelen Kutusunu Kontrol Et",
+      "description": "E-postana bir doğrulama bağlantısı gönderdik. Partnerinle eşleşmeden önce hesabını doğrulamak için o bağlantıya tıkla.",
+      "button_verify": "E-postamı Doğruladım",
+      "button_resend": "Doğrulama E-postasını Tekrar Gönder",
+      "button_logout": "Çıkış Yap",
+      "msg_sent": "Doğrulama e-postası gönderildi!",
+      "msg_checking": "Onay durumu sorgulanıyor...",
+      "msg_not_verified": "E-postan henüz doğrulanmamış. Lütfen tekrar kontrol et."
+    },
+    "wrapper": {
+      "waiting_auth": "Kimlik durumu bekleniyor...",
+      "waiting_db": "Veritabanı okunuyor...\n(Burada takılıyorsa Kuralları dışa açmayı unuttun!)",
+      "error_not_found": "Kayıt oluşturulurken bir problem oldu (Kayıt Bulunamadı).",
+      "btn_delete_broken": "Bozuk Hesabı Silip Tekrar Kaydol",
+      "error_fallback": "Bilinmeyen Yükleme Durumu (Fallback)..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Profilini Ayarla",
+      "subtitle": "Partnerin seni böyle görecek",
+      "choose_pic": "Profil Resmi Seç",
+      "upload_gallery": "Galeriden Yükle",
+      "name_label": "Sana verilecek ad (Hitap İsmi)",
+      "language_label": "Uygulama Dili",
+      "btn_finish": "Kurulumu Tamamla",
+      "error_name": "Lütfen bir hitap ismi gir."
+    },
+    "partner_link": {
+      "title": "Partnerini Bağla",
+      "your_code": "Vincly Kodun",
+      "tap_to_copy": "Kopyalamak için tıkla",
+      "partner_code_label": "Partnerinin Kodunu Gir",
+      "btn_link": "Hesapları Eşleştir",
+      "msg_waiting": "Partnerinin sana bağlanması bekleniyor...",
+      "msg_copied": "Kod panoya kopyalandı!",
+      "error_invalid": "Geçersiz Vincly Kodu formatı.",
+      "error_self": "Kendinle eşleşemezsin :)",
+      "error_not_found": "Kod bulunamadı! Partnerinin kaydolduğundan emin ol.",
+      "error_already": "Bu kullanıcı zaten başka biriyle eşleşmiş.",
+      "success": "Partnerin başarıyla bağlandı! Her şey hazırlanıyor..."
+    }
+  },
+  "home": {
+    "appbar_title": "Vincly",
+    "relationship_counter": {
+      "days_together": "Gündür Beraberiz"
+    },
+    "mood_tracker": {
+      "your_mood": "Senin Modun",
+      "partner_mood": "Partnerinin Modu"
+    },
+    "mood_tired": "Yorgun",
+    "mood_so_so": "Fena değil",
+    "mood_good": "İyi",
+    "mood_great": "Harika",
+    "mood_amazing": "Muhteşem",
+    "vibe": {
+      "question_1": "Bugün nasıl uyandın?",
+      "question_2": "Şu an enerjin nasıl?",
+      "question_3": "Bugün kendini nasıl hissediyorsun?",
+      "title": "Günlük Hava",
+      "submit": "Havayı Gönder"
+    },
+    "stats": {
+      "days_together": "Günler Birlikte",
+      "questions": "Sorular",
+      "cities": "Şehirler",
+      "memories": "Anılar",
+      "couple_stats": "Çift İstatistikleri"
+    },
+    "pet_section": {
+      "title": "Aşk Ejderi 🐉",
+      "dormant_egg": "Uyuyan Yumurta",
+      "baby_dragon": "Bebek Aşk Ejderi 🐉",
+      "stage_1": "Evre 1",
+      "stage_2": "Evre 2",
+      "stage_3": "Evre 3",
+      "waiting_partner": "Partnerinin cevabı bekleniyor...",
+      "your_vincly_pet": "Vincly Dostun",
+      "pet_stage_egg_desc": "Günlük soruları birlikte cevaplayarak dostunu çıkartın!",
+      "pet_stage_cracking_desc": "Seriyi devam ettir! Neredeyse var...",
+      "pet_stage_hatched_desc": "Aşkınız bir küçük ejderi çıkardı! Onu beslemeye devam et."
+    },
+    "daily_question": {
+      "title": "Günün Sorusu",
+      "appbar_title": "Günlük Testler",
+      "daily_card_title": "Günlük Kontrol Testi",
+      "daily_card_subtitle": "Bugünkü soruyu cevaplamak için tıkla",
+      "question_of_day": "Günün Sorusu",
+      "hint_answer": "İçinden geçen dürüst cevabı yaz...",
+      "btn_lock": "Cevabı Kilitle 🔒",
+      "btn_reveal": "Cevabı Göster 👀",
+      "wait_partner": "Partnerinin cevabı bekleniyor...",
+      "locked_desc": "Cevabın kilitlendi! O da cevap verdiğinde birbirinizin yazdıklarını görebileceksiniz.",
+      "your_answer": "Senin Cevabın",
+      "partner_answer": "Partnerinin Cevabı",
+      "streak": "Gün Serisi",
+      "past_archive": "Geçmiş Sorular Arşivi",
+      "no_past": "Henüz geçmiş test yok.",
+      "error_no_partner": "Partner verisi eksik",
+      "daily_question_header": "GÜNÜN SORUSU",
+      "your_answer_label": "Senin cevabın...",
+      "answer_button": "CEVAPLA  ▶",
+      "waiting_message": "{{partner_name}} cevabını bekliyoruz...",
+      "both_answered": "✨ İkiniz de cevapladınız! ✨",
+      "you_label": "Sen"
+    },
+    "recommended": {
+      "title": "Önerilen",
+      "recommended_for_you": "Sizin için önerilen",
+      "question_1": "İki Gerçek Bir Yalan",
+      "question_2": "Hangisini Tercih Edersin",
+      "question_3": "Hiç Yapmadığım Şey",
+      "question_4": "20 Soru",
+      "question_5": "İlişki Bilgisi Yarışması",
+      "question_6": "Fantezi Randevusu",
+      "question_7": "Çocukluk Anıları",
+      "question_8": "Gelecek Rüyaları",
+      "conversation_starters": "Konuşma Başlatıcılar",
+      "deep_dive": "Derin Dalış",
+      "this_or_that": "Bu mu Şu mu",
+      "q1": "Son zamanlarda yaptığın hangi şey seni seviyor hissetmemi sağladı?",
+      "q2": "Eğer 48 saatimiz olsa ve bir sorumluluk taşımak zorunda olmasak nereye giderdik?",
+      "q3": "Kahve randevozu mu yoksa dağcılık maceraları mı?",
+      "q4": "Bana hala anlatmadığın bir rüyan var mı?"
+    },
+    "partner_map": {
+      "title": "Partnerin Nerede?",
+      "distance": "Mesafe",
+      "last_seen": "Son görülme",
+      "never_seen": "Konum hiç paylaşılmadı"
+    }
+  },
+  "quizzes": {
+    "appbar_title": "Testler",
+    "tab_categories": "🎯 Test Kategorileri",
+    "tab_archive": "📚 Geçmiş Arşiv",
+    "category_1": "İlk Adımlar",
+    "category_1_desc": "Birbirini tanımak",
+    "category_2": "Acı Kaos",
+    "category_2_desc": "Oyuncu ve eğlenceli sorular",
+    "category_3": "Türk Tarzı",
+    "category_3_desc": "Geleneksel ilişki soruları",
+    "category_4": "Hafıza Yolu",
+    "category_4_desc": "Birlikte geçirilen yolculukla ilgili sorular",
+    "btn_start": "Teste Başla",
+    "no_quizzes": "Mevcut test yok",
+    "loading": "Testler yükleniyor...",
+    "error": "Test yüklenmesinde hata oluştu",
+    "quiz_categories_subtitle": "Bir tema seç ve birlikte derinleşin.",
+    "archive_subtitle": "Birlikte cevapladığınız tüm sorular.",
+    "streak_format": "{{count}} gün{{plural}}",
+    "daily_questions": {
+      "q1": "Son zamanlarda beni sevgiyle hissettiğin hangi şey yapım?",
+      "q2": "Şu an olursunuz ve 24 saatlik buluşmaya gidebilsek nereye giderdik?",
+      "q3": "Seninle yapmak için sabırsızlandığın bir şey var mı?",
+      "q4": "Hayatındaki hangi stresli şeyde sana yardım edebilirdim?",
+      "q5": "İlk ayımızın en sevdiğin anısı nedir?",
+      "q6": "Karakterimi bir renk olarak tanımlasaydın, hangisi olurdu?",
+      "q7": "Benim hangi alışkanlığım seni gizlice çok sevimli bulduğunu sanıyorsun?"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Vincly Kodun",
+    "copied": "Panoya kopyalandı!",
+    "linked_partner": "Eşleşmiş Partnerin",
+    "not_linked": "Henüz eşleşmedin",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Sen Al, Partnerine BEDAVA olsun!",
+    "settings": "Ayarlar",
+    "app_language": "Uygulama Dili",
+    "change_language": "Dil Değiştir",
+    "notifications": "Bildirim Ayarları",
+    "theme": "Tema Tercihleri",
+    "logout": "Çıkış Yap",
+    "theme_system": "Sistem Varsayılanı",
+    "theme_light": "Açık Tema (Işık & Ferah)",
+    "theme_dark": "Koyu Tema (Gece & Romantik)",
+    "unlink_partner": "Partneri Ayır",
+    "delete_account": "Hesabı Sil",
+    "unlink_confirm_title": "Partneri Ayrılsın?",
+    "unlink_confirm_desc": "Bu, partner bağlantını kaldıracaktır. Veriler kalacaktır.",
+    "delete_confirm_title": "Hesap Silinsin?",
+    "delete_confirm_desc": "Bu işlem geri alınamaz. Tüm veriler kalıcı olarak silinecek.",
+    "btn_cancel": "İptal",
+    "btn_confirm": "Onayla"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "quizzes": "Testler",
+    "profile": "Profil"
+  },
+  "common": {
+    "error": "Hata: {}"
+  }
+}

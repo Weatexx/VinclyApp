@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "¡Bienvenido de nuevo!",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "button": "Iniciar sesión",
+      "no_account": "¿No tienes cuenta? Regístrate",
+      "error_invalid": "Correo o contraseña incorrectos."
+    },
+    "signup": {
+      "title": "Crear cuenta",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "button": "Registrarse",
+      "have_account": "¿Ya tienes cuenta? Inicia sesión",
+      "error_fill_all": "Por favor, completa todos los campos.",
+      "error_pass_length": "La contraseña debe tener al menos 6 caracteres."
+    },
+    "email_verification": {
+      "title": "Verifica tu correo",
+      "headline": "Revisa tu bandeja de entrada",
+      "description": "Te enviamos un enlace de verificación a tu correo.",
+      "button_verify": "Ya verifiqué mi correo",
+      "button_resend": "Reenviar correo de verificación",
+      "button_logout": "Cerrar sesión",
+      "msg_sent": "¡Correo de verificación enviado!",
+      "msg_checking": "Verificando estado...",
+      "msg_not_verified": "Tu correo aún no está verificado."
+    },
+    "wrapper": {
+      "waiting_auth": "Esperando autenticación...",
+      "waiting_db": "Cargando base de datos...",
+      "error_not_found": "Hubo un problema al crear el registro.",
+      "btn_delete_broken": "Eliminar cuenta rota",
+      "error_fallback": "Estado de carga desconocido..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Configura tu perfil",
+      "subtitle": "Tu pareja te verá así",
+      "choose_pic": "Elegir foto de perfil",
+      "upload_gallery": "Subir desde galería",
+      "name_label": "Nombre para mostrar",
+      "language_label": "Idioma de la app",
+      "btn_finish": "Finalizar configuración",
+      "error_name": "Por favor ingresa un nombre."
+    },
+    "partner_link": {
+      "title": "Vincular pareja",
+      "your_code": "Tu Código Vincly",
+      "tap_to_copy": "Toca para copiar",
+      "partner_code_label": "Ingresa el código de tu pareja",
+      "btn_link": "Vincular cuentas",
+      "msg_waiting": "Esperando que tu pareja se vincule...",
+      "msg_copied": "¡Código copiado!",
+      "error_invalid": "Formato de código Vincly inválido.",
+      "error_self": "No puedes vincularte contigo mismo.",
+      "error_not_found": "¡Código no encontrado!",
+      "error_already": "Este usuario ya está vinculado con alguien más.",
+      "success": "¡Pareja vinculada exitosamente!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Días juntos" },
+    "mood_tracker": { "your_mood": "Tu estado", "partner_mood": "Estado de tu pareja" },
+    "vibe": {
+      "question_1": "¿Cómo amaneciste hoy?",
+      "question_2": "¿Cómo está tu energía hoy?",
+      "question_3": "¿Cómo te sientes ahora mismo?"
+    },
+    "stats": {
+      "days_together": "Días juntos",
+      "questions": "Preguntas",
+      "cities": "Ciudades",
+      "memories": "Recuerdos",
+      "couple_stats": "Estadísticas de pareja"
+    },
+    "quizzes": {
+      "appbar_title": "Quiz del día",
+      "daily_card_title": "Pregunta del día",
+      "daily_card_subtitle": "Toca para responder la pregunta de hoy",
+      "question_of_day": "Pregunta del día",
+      "hint_answer": "Escribe tu respuesta honesta...",
+      "btn_lock": "Bloquear respuesta 🔒",
+      "wait_partner": "Esperando respuesta de tu pareja...",
+      "locked_desc": "¡Tu respuesta está bloqueada! Se revelará cuando ambos respondan.",
+      "your_answer": "Tu respuesta",
+      "partner_answer": "Respuesta de tu pareja",
+      "streak": "Racha de días",
+      "past_archive": "Archivo de preguntas pasadas",
+      "no_past": "Sin quizzes pasados.",
+      "error_no_partner": "Datos de pareja no disponibles"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "vincly_code": "Tu Código Vincly",
+    "copied": "¡Copiado al portapapeles!",
+    "linked_partner": "Pareja vinculada",
+    "not_linked": "Sin vincular aún",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Compra 1, ¡tu pareja lo recibe GRATIS!",
+    "settings": "Configuración",
+    "app_language": "Idioma de la app",
+    "change_language": "Cambiar idioma",
+    "notifications": "Ajustes de notificaciones",
+    "theme": "Preferencias de tema",
+    "logout": "Cerrar sesión"
+  },
+  "common": { "error": "Error: {}" }
+}

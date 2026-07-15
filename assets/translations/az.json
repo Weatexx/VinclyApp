@@ -1,0 +1,115 @@
+{
+  "auth": {
+    "login": {
+      "title": "Xoş gəldiniz!",
+      "email": "E-poçt",
+      "password": "Şifrə",
+      "button": "Daxil ol",
+      "no_account": "Hesabınız yoxdur? Qeydiyyatdan keçin",
+      "error_invalid": "E-poçt və ya şifrə yanlışdır."
+    },
+    "signup": {
+      "title": "Hesab yarat",
+      "first_name": "Ad",
+      "last_name": "Soyad",
+      "email": "E-poçt",
+      "password": "Şifrə",
+      "button": "Qeydiyyat",
+      "have_account": "Artıq hesabınız var? Daxil olun",
+      "error_fill_all": "Zəhmət olmasa bütün sahələri doldurun.",
+      "error_pass_length": "Şifrə ən az 6 simvol olmalıdır."
+    },
+    "email_verification": {
+      "title": "E-poçtu doğrulayın",
+      "headline": "Gələnlər qutusunu yoxlayın",
+      "description": "E-poçtunuza doğrulama linki göndərdik. Partnerinizdən əvvəl hesabınızı doğrulayın.",
+      "button_verify": "E-poçtumu doğruladım",
+      "button_resend": "Doğrulama e-poçtunu təkrar göndər",
+      "button_logout": "Çıxış",
+      "msg_sent": "Doğrulama e-poçtu göndərildi!",
+      "msg_checking": "Doğrulama vəziyyəti yoxlanılır...",
+      "msg_not_verified": "E-poçtunuz hələ doğrulanmayıb. Yenidən yoxlayın."
+    },
+    "wrapper": {
+      "waiting_auth": "Autentifikasiya gözlənilir...",
+      "waiting_db": "Verilənlər bazası oxunur...",
+      "error_not_found": "Qeydiyyat zamanı problem baş verdi.",
+      "btn_delete_broken": "Bozuk hesabı silin",
+      "error_fallback": "Naməlum yükləmə vəziyyəti..."
+    }
+  },
+  "onboarding": {
+    "profile_setup": {
+      "title": "Profilinizi qurun",
+      "subtitle": "Partneriniz sizi belə görəcək",
+      "choose_pic": "Profil şəkli seçin",
+      "upload_gallery": "Qalereyadan yükləyin",
+      "name_label": "Göstəriləcək ad",
+      "language_label": "Tətbiq dili",
+      "btn_finish": "Qurulumu tamamla",
+      "error_name": "Zəhmət olmasa bir ad daxil edin."
+    },
+    "partner_link": {
+      "title": "Partneri əlaqələndirin",
+      "your_code": "Vincly Kodunuz",
+      "tap_to_copy": "Kopyalamaq üçün toxunun",
+      "partner_code_label": "Partnerin kodunu daxil edin",
+      "btn_link": "Hesabları əlaqələndirin",
+      "msg_waiting": "Partnerinizin əlaqələndirilməsi gözlənilir...",
+      "msg_copied": "Kod panoya kopyalandı!",
+      "error_invalid": "Yanlış Vincly kodu formatı.",
+      "error_self": "Özünüzlə əlaqələndirilə bilməzsiniz.",
+      "error_not_found": "Kod tapılmadı!",
+      "error_already": "Bu istifadəçi artıq başqasıyla əlaqələndirilib.",
+      "success": "Partner uğurla əlaqələndirildi!"
+    }
+  },
+  "home": {
+    "relationship_counter": { "days_together": "Gün birlikdəyik" },
+    "mood_tracker": { "your_mood": "Əhvalınız", "partner_mood": "Partnerin əhvalı" },
+    "vibe": {
+      "question_1": "Bu gün necə oyandınız?",
+      "question_2": "Bu gün enerjiniz necədir?",
+      "question_3": "Bu an özünüzü necə hiss edirsiniz?"
+    },
+    "stats": {
+      "days_together": "Birgə günlər",
+      "questions": "Suallar",
+      "cities": "Şəhərlər",
+      "memories": "Xatirələr",
+      "couple_stats": "Cüt statistikası"
+    },
+    "quizzes": {
+      "appbar_title": "Günün Quizi",
+      "daily_card_title": "Günün Sualı",
+      "daily_card_subtitle": "Bugünkü sualı cavablandırmaq üçün toxunun",
+      "question_of_day": "Günün Sualı",
+      "hint_answer": "Dürüst cavabınızı yazın...",
+      "btn_lock": "Cavabı kilidlə 🔒",
+      "wait_partner": "Partnerin cavabı gözlənilir...",
+      "locked_desc": "Cavabınız kilidləndi! Hər ikiniz cavabladıqda açılacaq.",
+      "your_answer": "Sizin cavabınız",
+      "partner_answer": "Partnerin cavabı",
+      "streak": "Günlük seriya",
+      "past_archive": "Keçmiş suallar arxivi",
+      "no_past": "Hələ keçmiş quiz yoxdur.",
+      "error_no_partner": "Partner məlumatı yoxdur"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "vincly_code": "Vincly Kodunuz",
+    "copied": "Panoya kopyalandı!",
+    "linked_partner": "Əlaqələndirilmiş Partner",
+    "not_linked": "Hələ əlaqələndirilməyib",
+    "pro_title": "Vincly Pro",
+    "pro_subtitle": "Siz alın, Partneriniz PULSUZ alsın!",
+    "settings": "Parametrlər",
+    "app_language": "Tətbiq dili",
+    "change_language": "Dili dəyişdirin",
+    "notifications": "Bildiriş parametrləri",
+    "theme": "Tema seçimləri",
+    "logout": "Çıxış"
+  },
+  "common": { "error": "Xəta: {}" }
+}
